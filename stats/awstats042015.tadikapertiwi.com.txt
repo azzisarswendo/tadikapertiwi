@@ -1,0 +1,743 @@
+AWSTATS DATA FILE 7.0 (build 1.971)
+# If you remove this file, all statistics for date 201504 will be lost/reset.
+# Last config file used to build this data file was /home2/u10321rqs/var/awstats/tadikapertiwi.com.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 27
+POS_GENERAL 2000                
+POS_TIME 2679                
+POS_VISITOR 15054               
+POS_DAY 21298               
+POS_DOMAIN 3605                
+POS_LOGIN 3989                
+POS_ROBOT 4144                
+POS_WORMS 4730                
+POS_EMAILSENDER 4861                
+POS_EMAILRECEIVER 5004                
+POS_SESSION 21816               
+POS_SIDER 22028               
+POS_FILETYPES 5139                
+POS_DOWNLOADS 5571                
+POS_OS 5682                
+POS_BROWSER 5874                
+POS_SCREENSIZE 6690                
+POS_UNKNOWNREFERER 6764                
+POS_UNKNOWNREFERERBROWSER 8450                
+POS_ORIGIN 9115                
+POS_SEREFERRALS 9266                
+POS_PAGEREFS 9425                
+POS_SEARCHWORDS 12306               
+POS_KEYWORDS 12531               
+POS_MISC 2341                
+POS_ERRORS 12650               
+POS_CLUSTER 3845                
+POS_SIDER_404 12825               
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20150423150423 41293 9385242 0
+FirstTime 20150408075211
+LastTime 20150423104314
+LastUpdate 20150423170733 41293 0 41293 0 0
+TotalVisits 192                 
+TotalUnique 128                 
+MonthHostsKnown 0                   
+MonthHostsUnknown 161                 
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+QuickTimeSupport 0 0 0
+JavaEnabled 0 0 0
+JavascriptDisabled 0 0 0
+PDFSupport 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+AddToFavourites 0 459 0
+RealPlayerSupport 0 0 0
+TotalMisc 0 0 0
+DirectorSupport 0 0 0
+FlashSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 61 101 21975191 22 29 456032
+1 51 270 20012188 13 26 999623
+2 3780 4397 109067908 221 303 28147031
+3 24222 24735 152148432 116 212 8866744
+4 21379 21945 137224179 201 255 13312465
+5 6646 7020 91546876 254 283 13897973
+6 7613 8738 124546095 325 422 21681475
+7 4541 5128 94949905 260 348 19741858
+8 403 983 82445364 118 324 12513601
+9 311 981 196636258 113 208 9291265
+10 143 687 115913247 64 99 4908544
+11 139 573 104950667 16 66 377562
+12 494 1057 19787883 64 89 4170330
+13 40 387 26151425 127 197 6789007
+14 75 394 11660228 237 266 20121650
+15 409 780 34648327 324 358 27173402
+16 95 226 6670857 221 236 15638900
+17 460 945 14089606 255 305 17308135
+18 32 222 4466188 96 154 6594256
+19 1 1 56 42 43 6450
+20 0 0 0 6 14 71551
+21 0 0 0 2 5 42771
+22 1 1 5326 6 11 51177
+23 22 102 3417625 5 13 159352
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 20 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 11
+id 70607 77726 1113393285
+gb 195 1383 227147581
+us 89 514 30660468
+ua 6 6 222
+jp 6 16 224214
+fi 6 6 19250
+fr 4 4 3989
+cn 2 3 190365
+ru 1 1 13957
+my 1 13 656770
+sg 1 1 3730
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 20 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 20 first Hits must be first (order not required for others)
+BEGIN_ROBOT 13
+googlebot 155 15698376 20150423150423 11
+facebook 138 12495143 20150423144818 0
+favicon 24 165336 20150421184203 0
+robot 10 2888 20150421195043 2
+bot[\s_+:,\.\;\/\\-] 8 37112 20150422094808 1
+slurp 5 44020 20150422163638 0
+unknown 3 1944 20150414181522 3
+no_user_agent 2 1415 20150410022311 0
+core 1 23577 20150422022205 0
+sift 1 20145 20150422094744 0
+surveybot 1 5720 20150423103340 0
+java\/[0-9] 1 1353 20150415180415 0
+wget 1 66410 20150409055205 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 19
+htc 3 85892 0 0
+css 2780 35459281 0 0
+ttf 568 68737796 0 0
+ph 1 30 0 0
+ip 3 90 0 0
+txt 1 17995 0 0
+woff2 177 9766160 0 0
+woff 627 44764008 0 0
+map 1106 237616608 0 0
+php 1103 248515257 0 0
+html 14 133906 0 0
+jpg 851 279259364 0 0
+eot 1 60767 0 0
+png 2878 96118148 0 0
+js 2195 133285609 0 0
+rss 38 25203 0 0
+Unknown 67315 218283075 0 0
+svg 5 181590 0 0
+gif 7 3052 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 3
+/robots.txt 17 0 4956
+/INSTALL.txt 1 0 17995
+/mm.cdr 1 0 66410
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS 13
+linuxandroid 2385
+winlong 29
+winxp 12387
+symbian 34
+java 2
+winnt 1
+win98 19
+linuxubuntu 693
+linux 40301
+winvista 7954
+win7 14219
+macosx 14
+Unknown 1635
+END_OS
+
+# Browser ID - Hits
+BEGIN_BROWSER 45
+msie6.0 1
+firefox28.0 3
+firefox5.0 1
+chrome40.0.2214.115 13307
+android 917
+firefox3.0.1 1
+w3m 1
+chrome28.0.1500.94 727
+chrome23.0.1271.6 3
+chrome26.0.1410.58 14
+opera9.80 1509
+firefox31.0 436
+msie8.0 53
+chrome7.0.514.0 1
+chrome42.0.2311.90 15521
+chrome41.0.2272.101 33
+msie7.0 3
+chrome27.0.1453 2
+chrome41.0.2272.76 693
+chrome41.0.2272.89 25
+firefox27.0 39
+Unknown 148
+firefox11.0 4
+chrome30.0.0.0 687
+chrome41.0.2272.118 25086
+firefox30.0 36
+firefox2.0.0.6 1
+chrome28.0.1500.71 1
+firefox7.0.1 13
+chrome13.0.782.215 12
+nokia 34
+firefox33.0 1
+mozilla 40
+netscape5.0 4
+firefox37.0 19544
+firefox14.0.1 1
+msie10.0 1
+firefox6.0 30
+chrome41.0.2272.81 40
+chrome27.0.1453.116 1
+chrome11.0.696.71 3
+chrome40.0.2214.93 38
+firefox36.0 656
+chrome21.0.1180.89 1
+firefox3.6.13 1
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 20
+visionutils/0.2 20150422085555
+Opera/9.80_(Android;_Opera_Mini/9.0.1829/36.1701;_U;_en)_Presto/2.12.423_Version/12.16 20150422094756
+Opera/9.80_(Android;_Opera_Mini/7.6.40234/36.1701;_U;_en)_Presto/2.12.423_Version/12.16 20150422141623
+UCWEB/2.0_(MIDP-2.0;_U;_Adr_4.4.2;_id;_SM-G7102)_U2/1.0.0_UCBrowser/9.8.0.534_U2/1.0.0_Mobile 20150419135849
+Opera/9.80_(Android;_Opera_Mini/7.6.40234/36.1701;_U;_id)_Presto/2.12.423_Version/12.16 20150423104314
+UCWEB/2.0_(MIDP-2.0;_U;_Adr_4.0.3;_id;_EVERCOSS_A5A*)_U2/1.0.0_UCBrowser/9.7.0.520_U2/1.0.0_Mobile 20150422142410
+RSSGraffiti 20150419074542
+Mozilla/5.0_() 20150422094930
+Opera/9.80_(Android;_Opera_Mini/7.5.33361/36.1701;_U;_en)_Presto/2.12.423_Version/12.16 20150423120930
+Opera/9.80_(Android;_Opera_Mini/7.6.40234/36.1649;_U;_en)_Presto/2.12.423_Version/12.16 20150421133240
+Opera/9.80_(Android;_Opera_Mini/7.6.40234/36.1633;_U;_en)_Presto/2.12.423_Version/12.16 20150414150612
+UCWEB/2.0_(MIDP-2.0;_U;_Adr_4.4.2;_id;_Windroye)_U2/1.0.0_UCBrowser/10.1.1.570_U2/1.0.0_Mobile 20150423073655
+Opera/9.80_(Android;_Opera_Mini/7.6.35843/36.1701;_U;_id)_Presto/2.12.423_Version/12.16 20150422112036
+Opera/9.80_(Android;_Opera_Mini/7.6.40234/36.1556;_U;_id)_Presto/2.12.423_Version/12.16 20150411042544
+Mozilla/5.0_(compatible;_Google-Site-Verification/1.0) 20150409072043
+null 20150420114110
+Mozilla/5.0_(compatible;_Feedwind/2.0;__http://feed.mikle.com/support/description/) 20150409133121
+Mozilla/5.0 20150408162132
+Opera/9.80_(Android;_Opera_Mini/7.6.40234/36.1556;_U;_en)_Presto/2.12.423_Version/12.16 20150413001345
+w3m/0.5.3_debian-19 20150421092459
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 8
+visionutils/0.2 20150422085555
+UCWEB/2.0_(MIDP-2.0;_U;_Adr_4.4.2;_id;_Windroye)_U2/1.0.0_UCBrowser/10.1.1.570_U2/1.0.0_Mobile 20150423073655
+UCWEB/2.0_(MIDP-2.0;_U;_Adr_4.4.2;_id;_SM-G7102)_U2/1.0.0_UCBrowser/9.8.0.534_U2/1.0.0_Mobile 20150419135849
+UCWEB/2.0_(MIDP-2.0;_U;_Adr_4.0.3;_id;_EVERCOSS_A5A*)_U2/1.0.0_UCBrowser/9.7.0.520_U2/1.0.0_Mobile 20150422142410
+null 20150420114110
+RSSGraffiti 20150419074542
+UCWEB/2.0_(Linux;_U;_Opera_Mini/7.1.32052/30.3697;_id;_SM-G7102)_U2/1.0.0_UCBrowser/9.8.0.534_Mobile 20150422092719
+Google-HTTP-Java-Client/1.17.0-rc_(gzip) 20150422094744
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 2173 2345
+From1 0 0
+From2 127 128
+From3 84 860
+From4 68534 76340
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 1
+google 127 128
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 20 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 57
+http://tadikapertiwi.net/css/font-awesome.min.css 25 25
+http://l.facebook.com/l.php 9 9
+http://lm.facebook.com/l.php 6 6
+http://azzisarswendo.tadikapertiwi.com/index/materi/id/20150416024604 6 6
+http://tadikapertiwi.net/index/materi/id/20150420020051 5 7
+http://azzisarswendo.tadikapertiwi.com 4 120
+http://feed.mikle.com/widget/ 4 5
+http://www.facebook.com/l.php 3 3
+https://www.facebook.com 3 3
+http://lm.facebook.com/lsr.php 3 3
+http://192.168.1.1/login 3 3
+http://goo.gl 2 2
+http://translate.google.com/translate_p 2 2
+http://panjatpinang.tadikapertiwi.com 2 16
+http://azzisarswendo.tadikapertiwi.com/index/materi/id/20150416032540 1 1
+http://t.co/ldsWmete6D 1 1
+https://mawords.com/tadikapertiwi.com 1 1
+http://azzisarswendo.tadikapertiwi.com/index/editmateri/id/20150416032540 1 14
+http://translate.google.co.id/translate_p 1 1
+http://azzisarswendo.tadikapertiwi.com/index/jadwal/id/20150416030810 1 14
+http://tadikapertiwi.org/index/materi/id/20150420054155 0 1
+http://tadikapertiwi.org/index/cari/ 0 18
+http://tadikapertiwi.org/index/cari 0 78
+http://tadikapertiwi.org/index/editjadwal 0 5
+http://translate.googleusercontent.com/translate_c 0 6
+http://www.tadikapertiwi.net 0 74
+http://tadikapertiwi.net/index/editmateri/id/20150331105946 0 1
+http://webcache.googleusercontent.com/search 0 1
+http://www.tadikapertiwi.net/index/tambahmateri 0 1
+http://tadikapertiwi.net/index/tentang 0 6
+http://tadikapertiwi.net 0 169
+http://tadikapertiwi.net/css/bootstrap.css.map 0 2
+http://azzisarswendo.tadikapertiwi.com/index/learn 0 20
+http://tadikapertiwi.org/index/profil 0 17
+http://tadikapertiwi.net/index/editmateri 0 9
+http://tadikapertiwi.net/index/editmateri/id/20150416030810 0 9
+http://www.tadikapertiwi.net/index/jadwal 0 6
+http://tadikapertiwi.net/index/profil 0 4
+http://tadikapertiwi.net/index/materi/id/20150416030650 0 1
+http://tadikapertiwi.net/index/materi/id/20150420060435 0 1
+http://tadikapertiwi.net/index/jadwal 0 7
+http://tadikapertiwi.net/index/materi/id/20150420013209 0 3
+http://tadikapertiwi.net/index/index/id/20140919010547 0 4
+http://tadikapertiwi.org/index/profil/id/Bg6yUN 0 10
+http://tadikapertiwi.net/index/index/ 0 2
+http://tadikapertiwi.net/index/tambahmateri 0 35
+http://tadikapertiwi.net/index/masuk 0 17
+http://www.tadikapertiwi.net/index/learn 0 6
+http://panjatpinang.tadikapertiwi.com 0 1
+http://tadikapertiwi.net/index/materi/id/20150416030810 0 2
+http://azzisarswendo.tadikapertiwi.com/index/jadwal 0 6
+http://www.tadikapertiwi.net/index/materi/id/20150416030810 0 45
+http://tadikapertiwi.org/index/materi/id/20150420060435 0 4
+http://tadikapertiwi.net/index/daftar 0 7
+http://tadikapertiwi.net/index/jadwal/id/20150331105946 0 1
+http://tadikapertiwi.org 0 38
+http://www.goal.com/id-ID/ 1 1
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 20 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 4
+tadikapertiwi.com 11
+anything 1
+materi+tadika+pertiwi 1
+tadika+pertiwi 1
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 20 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 5
+tadikapertiwi.com 11
+tadika 2
+pertiwi 2
+anything 1
+materi 1
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 7
+403 31 100607
+302 129 636082
+416 1 435
+206 2694 197725025
+500 326 107736
+301 10 5070
+404 222 246726
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referer
+BEGIN_SIDER_404 41
+/plugin/ckeditor/plugins/codesnippet/lib/highlight/styles/monkai.css 1 http://tadikapertiwi.com/index/materi/id/20150420060435
+/brosur/SMP_BACK.jpg 1 http://tadikapertiwi.com/bc/brosur.php
+/img/bg2.png 38 http://tadikapertiwi.com/style/style.css
+/robots.txt 19 -
+/index/images/fulls/05.jpg 1 http://tadikapertiwi.com/index/learn
+/site.php/admin 1 -
+/brosur.pph/ip 1 -
+/administrator.php 1 -
+/index/images/thumbs/02.jpg 1 http://tadikapertiwi.com/index/learn
+/login.php 1 -
+/index/images/avatar.jpg 1 http://tadikapertiwi.com/index/learn
+/logip 1 -
+/fonts/glyphicons-halflings-regular.woff 28 http://tadikapertiwi.com/css/bootstrap.css
+/m/ 4 -
+/wordpress 1 -
+/brosur/SMA_FRONT.jpg 1 http://tadikapertiwi.com/bc/brosur.php
+/brosur/SMP_FRONT.jpg 1 http://tadikapertiwi.com/bc/brosur.php
+/fonts/glyphicons-halflings-regular.ttf 28 http://tadikapertiwi.com/css/bootstrap.css
+/daftar 1 -
+/index/images/thumbs/03.jpg 1 http://tadikapertiwi.com/index/learn
+/brosur/css/bootstrap.theme.css 55 http://tadikapertiwi.com/brosur.php/
+/index/images/thumbs/06.jpg 1 http://tadikapertiwi.com/index/learn
+/brosur/SMK_BACK.jpg 1 http://tadikapertiwi.com/bc/brosur.php
+/mobile/ 1 -
+/css/bootsrap.css 1 -
+/park.css 12 http://tadikapertiwi.com/
+/css/style.css 1 http://tadikapertiwi.com/index/jadwal
+/plugin/ckeditor/skins/office2013/editor_gecko.css 1 http://tadikapertiwi.com/index/editmateri/id/20150422075944
+/admin 2 -
+/index/images/thumbs/04.jpg 1 http://tadikapertiwi.com/index/learn
+/chat 4 http://tadikapertiwi.com/index/jadwal
+/about 1 -
+/administrator 1 -
+/brosur/SMA_BACK.jpg 1 http://tadikapertiwi.com/bc/brosur.php
+/ip 1 -
+/elearningku/proses.php 1 -
+/brosur/css/bootstrap.css 1 http://tadikapertiwi.com/bc/brosur.php
+/login 1 -
+/brosur/SMK_FRONT.jpg 1 http://tadikapertiwi.com/bc/brosur.php
+/index/images/thumbs/05.jpg 1 http://tadikapertiwi.com/index/learn
+/index/images/thumbs/01.jpg 1 http://tadikapertiwi.com/index/learn
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 20 first Hits must be first (order not required for others)
+BEGIN_VISITOR 161
+222.124.40.71 28011 30096 455868253 20150422073227
+125.160.115.199 24604 25398 124355146 20150423072254
+203.190.37.246 13214 13307 9116696 20150423051424
+36.69.236.231 2010 2097 9951318 20150423041000
+139.194.111.33 1033 2403 63832747 20150421162129
+114.121.130.172 430 528 4124013 20150422122422
+110.137.226.88 399 693 14183543 20150410094950
+125.166.202.109 371 873 110135991 20150423021406
+125.160.115.224 179 447 114807407 20150415064825
+139.195.50.67 119 634 14426095 20150419074019
+82.145.217.102 104 334 3689319 20150421115559
+139.192.14.216 99 112 1619697 20150412061819
+202.137.22.152 15 196 16126828 20150422095050
+139.195.50.157 15 41 115677022 20150412133526
+82.145.219.108 14 103 1554380 20150420185949
+216.38.216.197 12 12 59642 20150413004036
+82.145.219.164 12 146 4453053 20150421133241
+82.145.217.88 11 195 4686500 20150419104646
+139.195.49.214 11 142 1834750 20150415175644
+39.254.182.173 11 49 1368822 20150423013242
+82.145.209.11 1 2 152232 20150411042544
+82.145.216.40 2 2 707 20150412111806
+69.58.178.56 1 1 5326 20150414181559
+70.39.187.205 2 40 3533455 20150422092718
+114.121.157.217 1 14 261661 20150418045446
+43.245.251.201 4 14 190112 20150423055949
+114.79.13.86 3 40 3442412 20150422131452
+103.247.218.166 3 36 3436488 20150423070334
+192.237.216.89 2 2 5405 20150420162703
+112.215.66.72 1 6 142452 20150422110553
+166.78.181.113 1 1 360 20150410053933
+223.255.230.57 6 56 2109045 20150419150549
+82.145.217.28 2 4 21219311 20150412093649
+64.233.173.211 1 1 352 20150408093432
+82.145.218.118 4 11 31534659 20150412111304
+64.233.173.128 0 1 315453 
+110.75.105.236 1 2 185039 20150408162132
+139.193.81.15 2 15 665776 20150423021455
+82.145.208.70 0 1 20115 
+180.214.232.93 1 2 185039 20150408171146
+66.249.92.14 1 1 19425 20150409041420
+64.233.172.216 1 1 424 20150409035415
+112.215.66.71 1 6 409289 20150422110752
+223.255.230.54 2 24 911355 20150421121759
+82.145.218.32 3 8 457187 20150409152611
+64.233.172.224 0 2 184883 
+173.252.105.116 0 1 389616 
+82.145.219.54 0 2 152368 
+82.145.219.169 8 24 84382962 20150412102729
+74.112.131.246 1 1 3730 20150422094828
+173.252.80.118 0 1 389616 
+66.249.83.134 1 9 653869 20150419073503
+114.121.160.141 2 2 11620 20150423025351
+173.252.80.112 0 1 389616 
+180.214.232.43 1 9 10455633 20150413001422
+82.145.211.217 0 2 303742 
+112.215.66.74 0 1 1847 
+203.190.36.246 6 25 876638 20150423021324
+199.30.228.141 1 1 360 20150409101012
+82.145.217.242 4 71 3642698 20150423104314
+141.0.11.194 2 32 705063 20150422112036
+66.249.82.179 6 6 21327 20150409072043
+82.145.209.145 4 39 41974403 20150412115649
+70.39.187.147 1 19 788262 20150423073654
+114.121.154.108 2 16 175521 20150423102457
+94.29.7.105 1 1 13957 20150420125701
+173.252.80.115 0 1 389616 
+180.214.232.41 2 17 4122881 20150413050421
+173.252.79.118 0 1 389616 
+212.83.172.161 3 3 1080 20150410054129
+66.249.83.249 1 6 706781 20150419073501
+66.249.92.7 1 1 19026 20150409041430
+82.145.217.161 0 2 20804 
+82.145.216.138 2 48 1678297 20150421005950
+180.214.233.67 5 56 2110135 20150421083648
+82.145.209.56 0 10 36293 
+54.89.114.150 1 1 3050 20150419074542
+70.39.184.137 2 39 1368947 20150419135847
+66.249.82.188 2 2 1832 20150415050041
+114.79.13.203 6 44 3482090 20150422134534
+107.167.99.187 2 41 3696341 20150422095724
+112.215.66.79 1 4 23312 20150422110755
+216.163.188.234 1 1 5296 20150413001445
+112.215.66.69 0 5 1613640 
+173.252.79.114 0 1 294488 
+23.96.208.137 1 1 3730 20150422094856
+114.121.162.56 2 24 903841 20150419140205
+107.167.103.209 2 42 3725963 20150422094755
+70.39.186.225 1 2 3772 20150422142409
+64.233.173.253 0 1 315453 
+173.252.80.117 0 1 389616 
+162.244.33.8 1 1 661 20150409085513
+112.215.66.73 1 5 108599 20150422110614
+66.249.84.141 2 24 1793012 20150419105714
+82.145.219.35 3 11 10458405 20150413001345
+82.145.218.141 0 2 152368 
+64.233.173.249 0 1 324040 
+64.233.173.216 1 2 391010 20150413024003
+112.215.66.78 0 6 512004 
+95.175.97.229 1 1 13957 20150420125730
+192.99.40.137 3 3 2116 20150414161642
+70.39.186.131 6 34 3176532 20150422094224
+50.193.202.82 1 1 1394 20150414125949
+66.249.82.170 7 8 187417 20150409071410
+74.112.131.243 1 1 3730 20150422094930
+82.145.219.168 3 66 1266222 20150422141621
+112.215.66.70 0 3 314131 
+180.253.113.177 4 37 3442307 20150422092023
+82.145.218.123 3 27 1227698 20150419230648
+5.39.93.201 1 1 2909 20150420115122
+82.145.209.183 0 2 151871 
+82.145.219.146 0 2 151871 
+82.145.218.13 2 10 2553548 20150414150612
+223.255.230.41 6 68 2098571 20150419112219
+202.62.16.127 1 8 119349 20150417183045
+173.252.80.119 0 1 16220 
+82.145.218.24 2 36 863530 20150420184155
+82.145.218.160 4 85 2487783 20150419124211
+82.145.208.108 1 20 678486 20150419074141
+54.225.120.249 0 2 520 
+66.249.90.39 1 1 2526 20150419073521
+54.176.238.43 1 1 5326 20150415045011
+150.70.173.5 1 1 20145 20150422094909
+216.163.188.226 1 1 5326 20150415052157
+66.249.83.141 0 4 199795 
+66.249.88.219 2 11 536274 20150419073651
+8.37.224.27 2 35 644921 20150422142225
+112.215.66.75 0 2 2205 
+192.99.170.80 2 2 3177 20150410020911
+114.124.31.133 2 24 895550 20150421043454
+66.249.88.217 2 13 111219 20150419073641
+64.233.173.221 1 1 1394 20150413024042
+194.6.233.45 6 6 222 20150414103736
+112.215.66.68 0 2 296358 
+223.255.230.227 3 4 153729 20150411044327
+183.171.175.103 1 13 656770 20150421132358
+36.74.246.18 1 12 882300 20150421095248
+150.70.173.51 1 1 13957 20150420120100
+66.249.84.249 2 23 1568794 20150420235938
+139.195.49.111 2 3 2457 20150412081326
+38.100.21.113 2 2 1322 20150409164929
+54.225.120.252 0 2 754 
+54.151.42.39 2 2 0 20150422094744
+36.70.70.43 7 40 3451051 20150422092347
+139.195.50.199 4 9 347260 20150413163339
+54.145.81.13 0 1 260 
+112.215.66.76 0 2 55243 
+82.145.219.123 1 24 1217104 20150420124020
+82.145.208.71 2 42 4699235 20150422092838
+112.215.65.152 4 38 1183270 20150422081546
+124.195.118.88 1 9 2548112 20150414144319
+66.249.84.134 4 23 1048576 20150420235905
+107.167.103.203 1 24 841017 20150423034234
+204.13.200.200 1 14 233605 20150420114109
+27.151.92.6 1 1 5326 20150414225648
+202.161.45.147 1 1 3730 20150422094751
+82.145.216.32 3 52 1280430 20150419121548
+173.252.79.119 0 1 389616 
+66.249.88.215 0 5 376470 
+66.249.92.122 1 1 19026 20150409041431
+222.124.40.192 3 36 4211786 20150423101509
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 16
+20150408 74 286 3885932 6
+20150409 276 369 8539940 20
+20150410 140 151 3875891 7
+20150411 35 49 1697095 8
+20150412 53 146 295123819 10
+20150413 138 286 113330718 11
+20150414 39 113 17835189 12
+20150415 160 530 31305947 10
+20150416 361 535 36622277 4
+20150417 15 42 3095511 2
+20150418 5 91 1097929 2
+20150419 294 1865 56604096 24
+20150420 1417 2709 138110103 18
+20150421 26548 28036 188178947 13
+20150422 1493 3316 303914895 28
+20150423 39870 41149 169095542 17
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 7
+1h+ 24
+5mn-15mn 14
+15mn-30mn 7
+30s-2mn 11
+0s-30s 111
+2mn-5mn 12
+30mn-1h 13
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 20 first Pages must be first (order not required for others)
+BEGIN_SIDER 95
+/chat/get 66539 185343819 0 4
+/css/bootstrap.css.map 1078 231369074 3 4
+/ 850 237513724 117 86
+/fonts/fontawesome-webfont.woff 627 44764008 14 11
+/fonts/fontawesome-webfont.ttf 568 68737796 0 15
+/fonts/fontawesome-webfont.woff2 177 9766160 2 3
+/log.php 78 10326109 0 1
+/brosur.php/ip 78 660953 1 1
+/index/daftar 75 1166266 1 3
+/index/materi/id/20150420060435 65 1114977 1 2
+/index/materi/id/20150422075944 56 651882 21 7
+/ip.php 53 2408 2 2
+/brosur.php 51 156187 1 10
+/logip 50 533937 4 12
+/index/jadwal 50 930687 2 2
+/index/tambahmateri 42 671302 0 0
+/index/tentang 42 467196 0 2
+/chat 41 162321 0 0
+/index/cari/ 27 448651 0 0
+/ip 25 29869 3 3
+/brosur/css/bootstrap.css.map 16 6095776 0 0
+/log.ph 1 30 0 0
+/admin.php 3 434 2 1
+/drupal/ 1 7715 0 0
+/log 13 1348024 0 1
+/dmin 1 30 0 0
+/index.php/index/daftar 1 3773 0 0
+/index/tentang/id/20150420060435 1 10425 0 0
+/index/editmateri/id/20150422075944 9 223082 0 0
+/index/learn 1 35377 0 0
+/log/htt 3 90 0 0
+/css/bootstrap-theme.css.map 12 151758 0 0
+/index/editmateri/id/20150419123009 1 2814 0 0
+/log/httpip 1 30 0 0
+/iii.php 1 361 1 1
+/index/index 9 117490 0 0
+/index/editmateri/id/20150420060435 6 103567 0 0
+/f 1 55106 0 0
+/ip.php/ip 4 20 0 0
+/feed 12 51261 1 3
+/fonts/fontawesome-webfont.eot 1 60767 1 1
+/index/ 1 3248 0 0
+/google3d04b02bea959b38.html 10 40488 2 2
+/administrator/ 3 434 0 0
+/index/daftar/id/20150416030810 1 2517 0 0
+/plugin/ckeditor/plugins/preview/preview.html 2 518 0 0
+/index/editmateri/id/20150422062630 2 48828 0 0
+/log.php/ 1 663 0 0
+/brosur.php/ 4 5621 0 0
+/wp-login.php 3 434 1 2
+/feed/rss/ 1 3619 0 0
+/feed/rss/id/20150416030810 1 1873 0 0
+/rss.php 2 1181 0 0
+/email.php 13 1961 1 1
+/iplog 1 360 0 1
+/feed/rss/id/20150416024604 1 1818 0 0
+/index/editmateri/id/20150420054155 2 12300 0 0
+/index/masuk 8 97160 0 0
+/index/materi/id/20150420053617 11 192656 1 2
+/index/materi/id/20150422062630 3 60616 0 0
+/log/http 4 1339971 0 0
+/css/ie/backgroundsize.min.htc 1 3810 0 1
+/bc/brosur.php 1 1433 0 0
+/feed/rss 2 3711 0 1
+/index/editmateri 22 294083 0 0
+/index/materi/id/20150416024604 12 83925 3 3
+/index/editmateri/id/20150416024604 2 12539 0 0
+/feed/rss/id/20150420060435 4 4623 0 0
+/log.ip 3 90 0 0
+/index/materi/id/20150416030810 10 92664 0 0
+/ip.php%27 1 56 1 0
+/index.php/azzis 1 427 0 0
+/rss 19 14186 1 0
+/index/editjadwal 3 1038897 0 0
+/log/ 1 30 0 0
+/index/materi/id/20150421031605 1 21263 0 0
+/install.php 4 19020 1 0
+/brosur.php/log 1 1433 0 0
+/index/materi/id/20150422121523 2 40568 0 0
+/feed/rss/id/20150420054155 4 4666 0 0
+/index/profil 17 252873 0 0
+/brosur.php/logip 18 20555548 2 1
+/admin 1 30 0 0
+/index/editmateri/id/20150422121523 2 29523 0 0
+/css/ie/PIE.htc 2 82082 1 1
+/index/materi/id/20150420054155 9 83135 1 2
+/site.php 3 53022 0 0
+/index/profil/ 4 61902 0 0
+/index 1 26568 0 0
+/log/https 6 43382 0 0
+/index/editmateri/id/20150420053617 6 129883 0 0
+/index/editmateri/id/20150416030810 3 16988 0 0
+/index/materi/id/20150419123009 2 4903 0 0
+/index/editmateri/id/20150421031605 3 75267 0 0
+/feed/rss/id/20150420053617 3 9537 0 0
+END_SIDER

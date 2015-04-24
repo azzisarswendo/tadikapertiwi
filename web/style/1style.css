@@ -1,0 +1,69 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 1, 2014, 1:46:37 AM
+    Author     : Azzis-PC
+*/
+
+body, html {
+    background-image: linear-gradient(to bottom, rgb(255,253,178) 0px, rgb(233,229,165) 100%);
+    background-color: rgb(233,229,165);
+    background-repeat: no-repeat;
+    text-shadow: 0px 0px 6px #64624B;
+}
+
+.jumbotron {
+    background-color: rgba(200,200,200,.5);
+    box-shadow: 0px 0px 6px #64624B;
+}
+
+.navbar {
+    background-color: rgba(0,0,0,.0);
+    background-image: linear-gradient(to bottom, #64624B 0px, #64624B 100%);
+    border-color:  rgba(100,100,100,.5);
+    box-shadow: 0px 0px 6px #64624B;
+}
+
+.navbar-collapse{
+    background-color: rgba(0,0,0,.0);
+    background-image: linear-gradient(to bottom, #64624B 0px, #64624B 100%);
+}
+
+hr {
+    background-color: #64624B;
+    border-color: #64624B;
+    box-shadow: 0px 0px 6px #64624B;
+}
+
+.btn, .form-control, .btn:active{
+    box-shadow: 0px 0px 6px #64624B;
+}
+
+.navbar-inverse .navbar-brand{
+    text-shadow: 0px 0px 6px rgba(0, 0, 0, .5);
+    color: rgba(0, 0, 0, .9);
+    font-size: 30px;
+    font-weight: bold;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default; 
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    text-shadow: 0px 0px 6px rgba(0, 0, 0, .5);
+    color: rgba(0, 0, 0, .9);
+    font-size: 20px;
+}
+
+.panel {
+    background-image: linear-gradient(to bottom, rgb(255,253,178) 0px, rgb(233,229,165) 100%);
+    background-color: rgb(233,229,165);
+    box-shadow: 0px 0px 6px #64624B;
+}

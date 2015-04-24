@@ -1,0 +1,32 @@
+a:33:{s:10:"sub-public";i:0;s:15:"sub-modapproval";i:1;s:15:"sub-remoteadmin";i:1;s:11:"sub-modlist";i:1;s:23:"sub-addressnotification";i:1;s:21:"sub-ownernotification";i:1;s:11:"post-policy";s:1:"5";s:23:"post-rejectemptysubject";s:1:"0";s:14:"post-rejectbcc";s:1:"0";s:12:"post-minsize";s:1:"1";s:12:"post-maxsize";s:6:"100000";s:27:"post-rejectcommandinsubject";s:1:"0";s:24:"post-rejectcommandinbody";s:1:"0";s:16:"delivery-fromsrs";i:1;s:18:"delivery-fromfield";s:0:"";s:22:"delivery-subjectprefix";s:6:"[root]";s:20:"delivery-replytolist";i:1;s:22:"delivery-bouncetimeout";i:7;s:19:"delivery-headerkeep";s:0:"";s:21:"delivery-headerremove";s:200:"return-path
+return-receipt-to
+content-length
+precedence
+x-confirm-reading-to
+x-pmrqc
+list-subscribe
+list-unsubscribe
+list-help
+list-post
+sender
+x-dkim-authentication
+domainkey-signature
+dkim-signature";s:18:"delivery-headeradd";s:230:"Sender: <<#l#>@<#h#>>
+X-No-Archive: yes
+List-Post: <mailto:<#L#>@<#h#>>
+List-Help: <mailto:<#l#>-help@<#h#>>
+List-Unsubscribe: <mailto:<#l#>-unsubscribe@<#h#>>
+List-Subscribe: <mailto:<#l#>-subscribe@<#h#>>
+X-Message-Number: <#n#>";s:17:"delivery-mimekeep";s:196:"multipart/alternative
+multipart/mixed
+multipart/digest
+multipart/message
+multipart/related
+multipart/report
+multipart/signed
+multipart/encrypted
+text/plain
+text/html
+image/jpeg
+image/png
+image/gif";s:19:"delivery-mimeremove";s:0:"";s:12:"misc-archive";i:1;s:18:"misc-archiveaccess";i:0;s:11:"misc-digest";i:0;s:22:"misc-digesttriggersize";i:100;s:23:"misc-digesttriggerposts";i:30;s:23:"misc-digesttriggerhours";i:48;s:9:"misc-lang";s:7:"default";s:12:"text-trailer";s:0:"";s:9:"text-info";s:0:"";s:8:"text-faq";s:0:"";}

@@ -1,0 +1,57 @@
+<?php if(isset($this->pesanerror)):?>
+<div class="alert alert-danger fade in" role="alert">
+      <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+      <?php echo $this->pesanerror;?>
+    </div>
+<?php endif;
+if(isset($this->pesan)):?>
+<div class="alert alert-success fade in" role="alert">
+      <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+      <?php echo $this->pesan.' (';?><a href="<?php echo $this->url(array('controller'=>'index','action'=>'materi','id'=>$this->id))?>"><?php echo $this->judul;?></a>).
+    </div>
+<?php endif;?>
+
+<div class="panel panel-default">
+    <div class="panel-heading"><i class="glyphicon glyphicon-info-sign"></i> &nbsp;&nbsp;&nbsp; Tambah Materi Pelajaran</div>
+    <div class="panel-body">
+<form role="form" method="post" action="">
+    <div class="col-sm-2 form-group">
+        <label class="control-label">Mata Pelajaran</label>
+        <select name="mapel" class="form-control">
+            <?php foreach ($this->mapel as $mapel) :?>
+            <option><?php echo $mapel->mapel;?></option>
+            <?php endforeach;?>
+        </select>
+    </div>
+    <div class="col-sm-2 form-group">
+        <label class="control-label">Tanggal</label>
+        <select name="tanggal" class="col-sm-2 form-control">
+            <?php $t = 1; while($t <= 31):?>
+            <option><?php echo $t;?></option>
+            <?php $t++; endwhile;?>
+        </select>
+        <select name="bulan" class="col-sm-2 form-control">
+            <?php $b = array('Jan','Feb','Mar','Apr','Mei','Jun','Jul','Agu','Sep','Okt','Nov','Des'); 
+            foreach ($b as $B):?>
+            <option><?php echo $B;?></option>
+            <?php endforeach;?>
+        </select>
+        <select name="tahun" class="col-sm-2 form-control">
+            <option>2014</option>
+            <option>2015</option>
+        </select>
+    </div>
+    <div class="col-sm-12 form-group">
+        <label for="inputPassword" class="control-label">Tulis Judul Materi</label>
+        <input type="text" name="judul" class="form-control">
+    </div>
+    <div class="col-sm-12 form-group">
+        <label for="inputPassword" class="control-label">Tulis Isi Materi</label>
+        <textarea class="form-control ckeditor" name="isi" rows="10"></textarea>
+    </div>
+    <div class="col-sm-12 form-group">
+        <input type="submit" name="simpan" class="btn btn-success" value="Simpan"/>
+    </div>
+</form>
+    </div>
+</div>

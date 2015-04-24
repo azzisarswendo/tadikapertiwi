@@ -1,0 +1,108 @@
+
+<section id="three">
+    <h2><a href="#masuk">Masuk</a> & <a href="#daftar">Pendaftaran</a></h2>
+    
+    <div class="row">
+        <div class="6u 12u$(small)" id="masuk">
+            <h2>Masuk</h2>
+
+            <?php if(isset($this->pesan)):?>
+            <div class="alert alert-danger fade in" role="alert">
+                <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <?php echo $this->pesan?>
+            </div>
+            <?php endif;?>
+            <form method="post">
+                <div class="row uniform 50%">
+                    <div class="12u$">
+                        <label for="pengguna">Pengguan Id</label>
+                        <input id="pengguna" type="text" name="pengguna"/>
+                    </div>
+                    <div class="12u$">
+                        <label for="katasandi">Kata Sandi</label>
+                        <input id="katasandi" type="password" name="katasandi"/>
+                    </div>
+                </div>
+                <hr/>
+                <ul class="actions">
+                    <li><input type="submit" value="Masuk" name="masuk" /></li>
+                </ul>
+            </form>
+        </div>
+        <div class="6u$ 12u$(small)" id="daftar">
+            <h2>Pendaftaran</h2>
+
+            <?php if(isset($this->pesanerror)):?>
+            <div class="alert alert-danger fade in" role="alert">
+                <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <?php echo $this->pesanerror?>
+            </div>
+            <?php endif;?>
+            <form method="post">
+                <div class="row uniform 50%">
+                    <div class="12u$">
+                        <label for="nama">Nama Lengkap</label>
+                        <input id="nama" type="text" name="nama"/>
+                    </div>
+                    <div class="12u$">
+                        <div class="select-wrapper">
+                            <label for="kelas">Kelas</label>
+                            <select id="kelas" name="kelas">
+                                <?php foreach($this->kelas as $kelas):?>
+                                <option value="<?php echo $kelas['kode'];?>"><?php echo $kelas['nama'];?></option>
+                                <?php endforeach;?>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="12u$">
+                        <label for="penggunaid">Pengguan Id</label>
+                        <input id="penggunaid" type="text" name="pengguna"/>
+                    </div>
+                    <div class="12u$">
+                        <label for="email"><span class="fa fa-book"></span> Email</label>
+                        <input id="email" type="text" name="email"/>
+                    </div>
+                    <div class="12u$">
+                        <label for="katasandi1">Kata Sandi</label>
+                        <input id="katasandi1" type="password" name="katasandi1"/>
+                    </div>
+                    <div class="12u$">
+                        <label for="katasandi2">Konfirmasi Kata Sandi</label>
+                        <input id="katasandi2" type="password" name="katasandi2"/>
+                    </div>
+                    <div class="12u$">
+                        <label for="kode">Kode Dari <?php echo $this->Title ?></label>
+                        <input id="kode" type="password" name="kode"/>
+                    </div>
+                </div>
+                <br/>
+                <h3>
+                    <span class="fa fa-th-list"></span> Kontak
+                </h3>
+                <hr/>
+                <div class="row uniform 50%">
+                    <div class="12u$">
+                        <label for="bbm"> PIN BBM</label>
+                        <input id="bbm" type="text" name="bbm"/>
+                    </div>
+                    <div class="12u$">
+                        <label for="hp"><span class="fa fa-mobile"></span> Nomor HP</label>
+                        <input id="hp" type="text" name="hp"/>
+                    </div>
+                    <div class="12u$">
+                        <label for="fb"><span class="fa fa-facebook-square"></span> URL Facebook</label>
+                        <input id="fb" type="text" name="fb"/>
+                    </div>
+                    <div class="12u$">
+                        <label for="tw"><span class="fa fa-twitter-square"></span> Id Twitter</label>
+                        <input id="tw" type="text" name="tw"/>
+                    </div>
+                </div>
+                <hr/>
+                <ul class="actions">
+                    <li><input type="submit" name="daftar" value="Daftar" /></li>
+                </ul>
+            </form>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,33 @@
+<section>
+        <h1>Jadwal Pelajaran</h1>
+        <hr/>
+        <?php foreach ($this->kelas as $kelas) :?>
+        <div class="table-wrapper">
+            <h2>Kelas <?php echo $kelas["nama"]; ?></h2>
+            <table class="alt">
+                <thead>
+                    <tr>
+                        <th>Senin</th>
+                        <th>Selasa</th>
+                        <th>Rabu</th>
+                        <th>Kamis</th>
+                        <th>Jumat</th>
+                        <th>Sabtu</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php foreach($this->jadwal->tampilSetiapKelas($kelas["kode"]) as $jadwal):?>
+                    <tr>
+                        <td><?php echo $jadwal["senin"];?></td>
+                        <td><?php echo $jadwal["selasa"];?></td>
+                        <td><?php echo $jadwal["rabu"];?></td>
+                        <td><?php echo $jadwal["kamis"];?></td>
+                        <td><?php echo $jadwal["jumat"];?></td>
+                        <td><?php echo $jadwal["sabtu"];?></td>
+                    </tr>
+                    <?php endforeach;?>
+                </tbody>
+            </table>
+        </div>
+        <?php   endforeach;?>
+</section>

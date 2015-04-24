@@ -1,0 +1,182 @@
+<section>
+<?php if(isset($this->pesanerror)):?>
+<div class="alert alert-danger fade in" role="alert">
+      <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+      <?php echo $this->pesanerror;?>
+    </div>
+<?php endif;
+if(isset($this->pesan)):?>
+<div class="alert alert-success fade in" role="alert">
+      <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+      <?php echo $this->pesan.' (';?><a href="<?php echo $this->url(array('controller'=>'index','action'=>'materi','id'=>$this->id))?>"><?php echo $this->judul;?></a>).
+    </div>
+<?php endif;?>
+    <h1>Tambah Materi Pelajaran</h1>
+    <hr/>
+<form role="form" method="post" action="">
+    <div class="row uniform 50%">
+    <div class="6u 12u$(xsmall)">
+        <label>Mata Pelajaran</label>
+        <select name="mapel">
+            <?php foreach ($this->mapel as $mapel) :?>
+            <option><?php echo $mapel->mapel;?></option>
+            <?php endforeach;?>
+        </select>
+    </div>
+    <div class="6u$ 12u$(xsmall)">
+        <label class="control-label">Tanggal</label>
+        <select id="tgl" name="tanggal">
+            <?php $t = 1; while($t <= 31):?>
+            <option><?php echo $t;?></option>
+            <?php $t++; endwhile;?>
+        </select>
+        <hr/>
+        <select id="bln" name="bulan">
+            <?php $b = array('Jan','Feb','Mar','Apr','Mei','Jun','Jul','Agu','Sep','Okt','Nov','Des'); 
+            foreach ($b as $B):?>
+            <option><?php echo $B;?></option>
+            <?php endforeach;?>
+        </select>
+        <hr/>
+        <select id="thn" name="tahun">
+            <option>2014</option>
+            <option>2015</option>
+        </select>
+    </div>
+    <div class="12u$">
+        <label for="judul">Tulis Judul Materi</label>
+        <input type="text" id="judul" name="judul" class="form-control">
+    </div>
+    <div class="12u$">
+        <label for="tx">Tulis Isi Materi</label>
+        <textarea id="tx" class="form-control ckeditor" name="isi" rows="10"></textarea>
+        <hr/>
+        <input type="submit" name="simpan" id="simpan" value="Simpan"/>
+    </div>
+    </div>
+</form>
+</section>
+<script>
+$(document).ready(function (){
+    $("#tgl").val('<?php echo date("j");?>');
+    $("#bln").val('<?php echo $b[date("n")-1];?>');
+    $("#thn").val('<?php echo date("Y");?>');
+});
+
+</script>
+<script>
+    CKEDITOR.plugins.registered['save'] = {
+      init: function (editor) {
+         var command = editor.addCommand('save',
+         {
+              modes: { wysiwyg: 1, source: 1 },
+              exec: function (editor) { // Add here custom function for the save button
+                  $("#simpan").click();
+              }
+         });
+         editor.ui.addButton('Save', { label: 'Save', command: 'save' });
+      }
+      
+    }
+</script>
+<script>
+    CKEDITOR.plugins.registered['newpage'] = {
+      init: function (editor) {
+      }
+      
+    }
+</script>
+<script>
+    CKEDITOR.plugins.registered['about'] = {
+        init: function (editor) {
+         var command = editor.addCommand('about',
+         {
+              modes: { wysiwyg: 1, source: 1 },
+              exec: function (editor) { // Add here custom function for the save button
+                  window.open("<?php echo $this->url(array('controller' => 'index', 'action' => 'tentang', "id" => null))?>", "_blank")
+              }
+         });
+         editor.ui.addButton('About', { label: 'About', command: 'about' });
+      }
+      
+    }
+</script>
+<script>
+CKEDITOR.replace( 'tx', {
+	toolbar : [
+	{ 
+            name: 'document', 
+            groups: [ 'mode', 'document', 'doctools' ], 
+            items: [ 'Source', '-', 'Save', 'NewPage', 'Preview', 'Print', '-', 'Templates' ] 
+        },
+	{ 
+            name: 'clipboard', 
+            groups: [ 'clipboard', 'undo' ], 
+            items: [ 'Cut', 'Copy', 'Paste', 'PasteText', 'PasteFromWord', '-', 'Undo', 'Redo' ] 
+        },
+	{ 
+            name: 'editing', 
+            groups: [ 'find', 'selection', 'spellchecker' ], 
+            items: [ 'Find', 'Replace', '-', 'SelectAll', '-', 'Scayt' ] 
+        },
+	{ 
+            name: 'forms', 
+            items: [ 'Form', 'Checkbox', 'Radio', 'TextField', 'Textarea', 'Select', 'Button', 'ImageButton', 'HiddenField' ] 
+        },
+	{ 
+            name: 'basicstyles', 
+            groups: [ 'basicstyles', 'cleanup' ], 
+            items: [ 'Bold', 'Italic', 'Underline', 'Strike', 'Subscript', 'Superscript', '-', 'RemoveFormat' ] 
+        },
+	{ 
+            name: 'paragraph', 
+            groups: [ 'list', 'indent', 'blocks', 'align', 'bidi' ], 
+            items: [ 'NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'Blockquote', 'CreateDiv', '-', 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock', '-', 'BidiLtr', 'BidiRtl', 'Language' ] 
+        },
+	{ 
+            name: 'links', items: [ 'Link', 'Unlink'] 
+        },
+	{ 
+            name: 'insert', items: [ 'Image', 'Flash', 'Table', 'HorizontalRule', 'Smiley', 'SpecialChar', 'PageBreak', 'Iframe', 'CodeSnippet', 'Mathjax' ] 
+        },
+	{ 
+            name: 'styles', 
+            items: [ 'Styles', 'Format', 'Font', 'FontSize' ] 
+        },
+	{ 
+            name: 'colors', 
+            items: [ 'TextColor', 'BGColor' ] 
+        },
+	{ 
+            name: 'tools', 
+            items: [ 'Maximize', 'ShowBlocks' ] 
+        },
+	{ 
+            name: 'others', 
+            items: [ '-' ] 
+        },
+	{ 
+            name: 'about', 
+            items: [ 'About' ] 
+        }
+],
+
+// Toolbar groups configuration.
+toolbarGroups : [
+	{ name: 'document', groups: [ 'mode', 'document', 'doctools' ] },
+	{ name: 'clipboard', groups: [ 'clipboard', 'undo' ] },
+	{ name: 'editing', groups: [ 'find', 'selection', 'spellchecker' ] },
+	{ name: 'forms' },
+	{ name: 'basicstyles', groups: [ 'basicstyles', 'cleanup' ] },
+	{ name: 'paragraph', groups: [ 'list', 'indent', 'blocks', 'align', 'bidi' ] },
+	{ name: 'links' },
+	{ name: 'insert' },
+	{ name: 'styles' },
+	{ name: 'colors' },
+	{ name: 'tools' },
+	{ name: 'others' },
+	{ name: 'about' }
+],
+	// NOTE: Remember to leave 'toolbar' property with the default value (null).
+});
+</script>

@@ -1,0 +1,76 @@
+<?php if($this->idmateri == null) :?>
+<section>
+<div class="table-wrapper">
+    <table>
+        <thead>
+            <tr>
+                <th>Judul</th>
+                <th>Lihat</th>
+                <th>Edit</th>
+                <th>Mata Pelajaran</th>
+                <th>Tanggal</th>
+                <th>Pembuat</th>
+            </tr>
+        </thead>
+        <tbody>
+    <?php foreach ($this->materi as $materi) :?>
+            <tr>
+                <td><a href="<?php echo $this->url(array('controller'=>'index','action'=>'materi','id'=>$materi->id_materi))?>"><?php echo $materi->judul?></a></td>
+                <td><a href="<?php echo $this->url(array('controller'=>'index','action'=>'materi','id'=>$materi->id_materi))?>">Lihat</a></td>
+                <td><a href="<?php echo $this->url(array('controller' => 'index', 'action' => 'editmateri', 'id' => $materi->id_materi))?>">Edit</a></td>
+                <td><?php echo $materi->mapel; ?></td>
+                <td><?php echo $materi->tanggal . " " . $materi->bulan . " " . $materi->tahun; ?></td>
+                <td><?php echo $this->user->ambil($materi->user)->nama; ?></td>
+            </tr>
+    <?php endforeach;?>
+        </tbody>
+    </table>
+</div>
+</section>
+<?php else :?>
+<?php if(isset($this->pesanerror)):?>
+<div class="alert alert-danger fade in" role="alert">
+      <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+      <?php echo $this->pesanerror;?>
+    </div>
+<?php endif;
+if(isset($this->pesan)):?>
+<div class="alert alert-success fade in" role="alert">
+      <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+      <?php echo $this->pesan.' (';?><a href="<?php echo $this->url(array('controller'=>'index','action'=>'materi','id'=>$this->id))?>"><?php echo $this->judul;?></a>).
+    </div>
+<?php endif;?>
+
+<div class="panel panel-default">
+    <div class="panel-heading">Edit Materi Pelajaran</div>
+    <div class="panel-body">
+        <form role="form" method="post" action="">
+            <div class="col-sm-2 form-group">
+                <label>Edit Mata Pelajaran</label>
+                <?php echo $this->form->mapel;?>
+                <?php echo $this->form->id;?>
+            </div>
+            <div class="col-sm-2 form-group">
+                <label>Edit Tanggal</label>
+                <?php echo $this->form->tanggal;?>
+                <?php echo $this->form->bulan;?>
+                <?php echo $this->form->tahun;?>
+            </div>
+            <div class="col-sm-12 form-group">
+                <label>Edit Judul Materi</label>
+                <?php echo $this->form->judul;?>
+            </div>
+            <div class="col-sm-12 form-group">
+                <label>Edit Isi Materi</label>
+                <?php echo $this->form->isi;?>
+            </div>
+            <div class="col-sm-12 form-group">
+                <?php echo $this->form->simpan;?> Atau <?php echo $this->form->hapus;?>
+                <script>
+                    $("#hapus").click(function(){if(confirm("Beneran Mau Dihapus Cok?")== true){return true;}else{return false;}});
+                </script>
+            </div>
+        </form>
+    </div>
+</div>
+<?php endif; ?>

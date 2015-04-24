@@ -1,0 +1,115 @@
+<section>
+    <div class="row">
+        <div class="4u 12u$(small)">
+            <label>Kelas</label>
+            <select class="kelas">
+                <option value="">-Pilih-</option>
+                <?php foreach($this->kelas as $kelas):?>
+                <option value="<?php echo $kelas["nama"];?>"><?php echo $kelas["nama"];?></option>
+                <?php endforeach;?>
+            </select>
+        </div>
+        <div class="4u 12u$(small)">
+            <label>Mata Pelajaran</label>
+            <select class="mapel">
+                <option value="">-Pilih-</option>
+                <?php foreach($this->mapel as $mapel):?>
+                <option value="<?php echo $mapel["mapel"];?>"><?php echo $mapel["mapel"];?></option>
+                <?php endforeach;?>
+            </select>
+        </div>
+        <div class="4u$ 12u$(small)">
+            <label>Judul</label>
+            <div class="row uniform 30%">
+                <div class="8u 12u$(small)">
+                    <input placeholder="Judul" type="text" class="key"/>
+                </div>
+                <div class="4u$ 12u$(small)">
+                    <a class="cari"><div style="padding: 0.75em; height:2.75em;border-radius: 0.35em;border: 3px solid #EFEFEF;color: #787878;cursor: pointer;display: inline-block;line-height: 1em;">Cari</div></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script>             
+$(".cari").click(function(){
+   kelas = $(".kelas").val();
+   mapel = $(".mapel").val();
+   judul = $(".key").val();
+   cari = "/index/cari/?kata="+judul+";"+kelas+";"+mapel
+   window.open(cari, '_self');
+}); 
+</script>
+<?php
+function singkat($isi, $lenght)
+{
+    $chr = '\n';
+    $cnt = 2;
+    $post = 0;
+    $trimmed = FALSE;
+    for($i = 1; $i <= $cnt; $i++)
+    {
+        if($temp = strpos($isi, $chr, $post+1))
+        {
+            $post = $temp;
+            $trimmed = TRUE;
+        }
+        else 
+        {
+            $post = strlen($isi)-1;
+            $trimmed = FALSE;
+            break;
+        }
+    }
+        
+    $isi = substr($isi, 0, $post);
+        
+    if(strlen($isi) > $lenght)
+    {
+        $isi = substr($isi, 0, $lenght);
+        $isi = substr($isi, 0, strrpos($isi, ' '));
+        $trimmed = TRUE;
+    }
+      
+    if($trimmed) $isi .= '...';
+      
+    return $isi;
+}
+
+?>
+<link rel="alternate" type="application/rss+xml" href="<?php echo $this->baseUrl(). "/feed";?>"/>
+<section>
+<?php foreach ($this->materi as $materi) :?>
+    <h4>
+        <a href="<?php echo $this->url(array('controller'=>'index','action'=>'materi','id'=>$materi->id_materi))?>"><?php echo $materi->judul?></a>
+    </h4>
+        <blockquote>
+            <p class="info">
+                <?php echo "<u>".$materi->tanggal.' '.$materi->bulan.' '.$materi->tahun . "<br/>". $materi->mapel .  "<br/> by : ". $this->user->ambil($materi->user)->nama . "</u><br/>";?>
+            </p>
+        <?php 
+                        /*$cari = array('<','>','<?','?>');
+                        //$ganti = array('','','&lt;?','?&gt;');
+                        //$mat = str_replace($cari, $ganti, $materi->materi);*/
+                        $cari = array('/\<\/[^>]*\>/sU','/\<[^>]*\>/sU', '/\<[^>]*\/\>/sU', '/\&nbsp\;/');
+                        $ganti = array("", "", "", " ");
+                        $mat = preg_replace($cari, $ganti, $materi->materi);
+                        echo trim(singkat(trim($mat), 1000));?>  
+            <br/>
+            <a href="<?php echo $this->url(array('controller'=>'index','action'=>'materi','id'=>$materi->id_materi))?>">Buka <span class="fa fa-chevron-right"></span></a>
+        </blockquote>
+<br class="clear"/>
+<?php endforeach;?>
+</section>
+<?php 
+echo "";
+/**
+$m = "<?php echo 'azzis'; echo phpinfo();?>";
+
+$cari = '~(<\?php)([^<]*)(\?>)~';
+$ganti = "$2";
+$kode = preg_replace($cari, $ganti, $m);
+eval($kode)
+?>
+ * 
+ */

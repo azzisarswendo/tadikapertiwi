@@ -1,0 +1,13 @@
+multipart/alternative
+multipart/mixed
+multipart/digest
+multipart/message
+multipart/related
+multipart/report
+multipart/signed
+multipart/encrypted
+text/plain
+text/html
+image/jpeg
+image/png
+image/gif

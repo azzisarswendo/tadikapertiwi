@@ -1,0 +1,149 @@
+<?php if(isset($this->feed)) :?>
+<!DOCTYPE html>
+<html>
+	<head>
+		<title><?php echo $this->Title?></title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+                <link rel='shortcut icon' type='image/vnd.microsoft.icon' href='/img/favicon.ico'> <!-- IE -->
+                <link rel='apple-touch-icon' type='image/png' href='/img/logo.png'> <!-- iPhone -->
+                <link rel='apple-touch-icon' type='image/png' sizes='72x72' href='/img/logo.png'> <!-- iPad -->
+                <link rel='apple-touch-icon' type='image/png' sizes='114x114' href='/img/logo.png'> <!-- iPhone4 -->
+                <link rel='icon' type='image/png' href='/img/logo.png'>
+		<script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+		<?php //echo $this->headScript()->appendFile($this->baseUrl()."/js/jquery.min.js");?>
+		<?php echo $this->headScript()->appendFile($this->baseUrl()."/js/bootstrap.js");?>
+                <?php echo $this->headScript()->appendFile($this->baseUrl().'/plugin/ckeditor/ckeditor.js');?>
+                
+                        <?php echo $this->headLink()->prependStylesheet($this->baseUrl().'/plugin/ckeditor/samples/sample.css'); ?>
+                        <?php echo $this->headLink()->prependStylesheet($this->baseUrl()."/css/bootstrap.css");?>
+                        
+		<?php echo $this->headScript()->appendFile($this->baseUrl()."/js/jquery.poptrox.min.js");?>
+		<?php echo $this->headScript()->appendFile($this->baseUrl()."/js/skel.min.js");?>
+		<?php echo $this->headScript()->appendFile($this->baseUrl()."/js/init.js");?>
+		<noscript>
+                        <?php echo $this->headLink()->prependStylesheet($this->baseUrl().'/plugin/ckeditor/samples/sample.css'); ?>
+                        <?php echo $this->headLink()->prependStylesheet($this->baseUrl()."/css/bootstrap.css");?>
+                        <?php echo $this->headLink()->prependStylesheet($this->baseUrl()."/css/skel.css");?>
+			<?php echo $this->headLink()->prependStylesheet($this->baseUrl()."/css/style.css");?>
+			<?php echo $this->headLink()->prependStylesheet($this->baseUrl()."/css/style-xlarge.css");?>
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	</head>
+	<body id="top">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="<?php echo $this->url(array('controller' => 'index', 'action' => 'index'))?>" class="image avatar"><img src="<?php echo $this->baseUrl()?>/images/logo.png" alt="" /></a>
+				<h1><strong><?php echo $this->Title?></strong><br/> <?php echo $this->Slogan?></h1>
+			</header>
+
+                
+                            <nav class="navbar  navbar-default">
+                                <div class="container-fluid">
+                                    <!-- Brand and toggle get grouped for better mobile display -->
+                                    <div class="navbar-header">
+                                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                            <span class="sr-only">Toggle navigation</span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                    </div>
+
+                                  <!-- Collect the nav links, forms, and other content for toggling -->
+                                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                        <ul class="nav navbar-nav">
+                                            <li <?php if($this->nav == "index") echo 'class="active"'; ?>><a href="<?php echo $this->url(array('controller' => 'index', 'action' => 'index'))?>">Home</a></li>
+                                            <?php if($this->input != "tidak"): ?>
+                                            <li <?php if($this->nav == "tambahmateri") echo 'class="active"'; ?> ><a href="<?php echo $this->url(array('controller' => 'index', 'action' => 'tambahmateri'))?>">Tambah Materi</a></li>
+                                            <?php endif;?>
+                                            <li <?php if($this->nav == "jadwal") echo 'class="active"'; ?> ><a href="<?php echo $this->url(array('controller' => 'index', 'action' => 'jadwal'))?>">Jadwal Pelajaran</a></li>
+                                            <?php if($this->input != "tidak"): ?>
+                                            <li <?php if($this->nav == "chat") echo 'class="active"'; ?> ><a href="<?php echo $this->url(array('controller' => 'chat', 'action' => 'index'))?>">Chat Teman</a></li>
+                                            <li <?php if($this->nav == "editmateri") echo 'class="active"'; ?> ><a href="<?php echo $this->url(array('controller' => 'index', 'action' => 'editmateri'))?>">Edit Materi</a></li>
+                                            <?php endif;?>
+                                            <li <?php if($this->nav == "tentang") echo 'class="active"'; ?> ><a href="<?php echo $this->url(array('controller' => 'index', 'action' => 'tentang'))?>">Tentang</a></li>
+                                            <?php if($this->input != "tidak"): ?>
+                                            <li <?php if($this->nav == "profil") echo 'class="active"'; ?> ><a href="<?php echo $this->url(array('controller' => 'index', 'action' => 'profil'))?>"><?php echo $this->nama; ?></a></li>
+                                            <li><a href="<?php echo $this->url(array('controller' => 'index', 'action' => 'keluar'))?>">Keluar</a></li>
+                                            <?php else : ?>
+                                            <li <?php if($this->nav == "daftar") echo 'class="active"'; ?> ><a href="<?php echo $this->url(array('controller' => 'index', 'action' => 'daftar'))?>">Masuk / Daftar</a></li>
+                                            <?php endif;?>
+                                            <!--li class="dropdown">
+                                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                                                    <ul class="dropdown-menu" role="menu">
+                                                        <li><a href="#">Action</a></li>
+                                                        <li><a href="#">Another action</a></li>
+                                                        <li><a href="#">Something else here</a></li>
+                                                        <li class="divider"></li>
+                                                        <li><a href="#">Separated link</a></li>
+                                                        <li class="divider"></li>
+                                                    <li><a href="#">One more separated link</a></li>
+                                                </ul>
+                                            </li-->
+                                        </ul>
+                                    </div><!-- /.navbar-collapse -->
+                                </div><!-- /.container-fluid -->
+                            </nav>
+                
+		<!-- Main -->
+			<div id="main">
+                            <?php echo $this->layout()->content; ?>
+                            <section id="three">
+                                <h2>Didukung Oleh :</h2> 
+                                <div class="row  jumbotron">                               
+                                    <div class="3u 12u$(small)">
+                                        <div class="row uniform 50%">
+                                            <div class="12u$">
+                                                <a href="https://indoglobal.com"><br/><br/>
+                                                    <img width="200" class="img img-responsive" src="<?php echo $this->baseUrl(). "/img/indogloballogo.png"?>"/>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="3u$ 12u$(small)">
+                                        <div class="row uniform 50%">
+                                            <div class="12u$">
+                                                <a href="http://panjatpinang.tadikapertiwi.com">
+                                                    <img width="100" class="img img-responsive" src="<?php echo $this->baseUrl(). "/img/panjatpinangfix.png"?>"/>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<ul class="icons">
+					<li><a href="http://fb.com/tadikapertiwi" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+					<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+					<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+					<li><a href="mailto:root@tadikapertiwi.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+				</ul>
+				<ul class="copyright">
+                                        <?php
+                                            //tahun copyright
+                                            function cr(){
+                                                if(date("Y") == 2014){
+                                                    return date("Y");
+                                                }
+                                                else {
+                                                    return "2014 - ". date("Y");
+                                                }
+                                            }
+                                        ?>
+                                    <li>Copyright &copy; <?php echo cr() ?></li><li>Program By : <a target="blank" href="http://panjatpinang.tadikapertiwi.com">Panjat PInang</a></li>
+				</ul>
+			</footer>
+
+	</body>
+</html>
+<?php else : ?>
+<?php echo $this->layout()->content; ?>
+<?php endif; ?>

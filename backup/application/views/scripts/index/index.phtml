@@ -1,0 +1,73 @@
+<?php
+function singkat($isi, $lenght)
+{
+    $chr = '\n';
+    $cnt = 2;
+    $post = 0;
+    $trimmed = FALSE;
+    for($i = 1; $i <= $cnt; $i++)
+    {
+        if($temp = strpos($isi, $chr, $post+1))
+        {
+            $post = $temp;
+            $trimmed = TRUE;
+        }
+        else 
+        {
+            $post = strlen($isi)-1;
+            $trimmed = FALSE;
+            break;
+        }
+    }
+        
+    $isi = substr($isi, 0, $post);
+        
+    if(strlen($isi) > $lenght)
+    {
+        $isi = substr($isi, 0, $lenght);
+        $isi = substr($isi, 0, strrpos($isi, ' '));
+        $trimmed = TRUE;
+    }
+      
+    if($trimmed) $isi .= '...';
+      
+    return $isi;
+}
+
+?>
+<link rel="alternate" type="application/rss+xml" href="<?php echo $this->baseUrl(). "/feed";?>"/>
+<section>
+<?php foreach ($this->materi as $materi) :?>
+    <h2>
+        <a href="<?php echo $this->url(array('controller'=>'index','action'=>'materi','id'=>$materi->id_materi))?>"><?php echo $materi->judul?></a>
+    </h2>
+        <blockquote>
+            <p class="info">
+                <?php echo $materi->mapel . "<br/>". $materi->tanggal.' '.$materi->bulan.' '.$materi->tahun . " by : ". $this->user->ambil($materi->user)->nama . "<br/>";?>
+            </p>
+        <?php 
+                        /*$cari = array('<','>','<?','?>');
+                        //$ganti = array('','','&lt;?','?&gt;');
+                        //$mat = str_replace($cari, $ganti, $materi->materi);*/
+                        $cari = array('/\<\/[^>]*\>/sU','/\<[^>]*\>/sU', '/\<[^>]*\/\>/sU', '/\&nbsp\;/');
+                        $ganti = array("", "", "", " ");
+                        $mat = preg_replace($cari, $ganti, $materi->materi);
+                        echo trim(singkat(trim($mat), 1000));?>  
+            <br/>
+            <a href="<?php echo $this->url(array('controller'=>'index','action'=>'materi','id'=>$materi->id_materi))?>">Buka <span class="fa fa-chevron-right"></span></a>
+        </blockquote>
+<br class="clear"/>
+<?php endforeach;?>
+</section>
+<?php 
+echo "";
+/**
+$m = "<?php echo 'azzis'; echo phpinfo();?>";
+
+$cari = '~(<\?php)([^<]*)(\?>)~';
+$ganti = "$2";
+$kode = preg_replace($cari, $ganti, $m);
+eval($kode)
+?>
+ * 
+ */

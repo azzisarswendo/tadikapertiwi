@@ -1,0 +1,16 @@
+<?php
+
+class Application_Model_DbTable_Masuk extends Zend_Db_Table_Abstract
+{
+
+    protected $_name = 'userdata';
+    
+    public function masuk($pengguna, $katasandi)
+    {
+        $select = $this->select();
+        $select->where("penggunaid = '$pengguna' and katasandi2 = '$katasandi'");
+        return $this->fetchRow($select);
+    }
+
+}
+

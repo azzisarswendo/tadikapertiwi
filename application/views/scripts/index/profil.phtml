@@ -1,0 +1,58 @@
+<form method="post"/>
+    <?php echo $this->form->id ?>
+    <table class="table table-bordered">
+        <tr>
+            <td>
+                <label>Nama Lengkap</label>
+            </td>
+            <td>
+                <?php echo $this->form->nama ?>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Kelas</label>
+            </td>
+            <td>
+                <input class="form-control" type="text" value="<?php echo $this->kelas ?>" name="kelas" disabled/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Pengguna ID</label>
+            </td>
+            <td>
+                <?php echo $this->form->pengguna ?>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label><span class="fa fa-book"></span> Email</label>
+            </td>
+            <td>
+                <?php echo $this->form->email ?>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Kata Sandi</label>
+            </td>
+            <td>
+                <?php echo $this->form->pass ?>
+            </td>
+        </tr>
+    </table>
+        <br class="clear">
+        <label><span class="fa fa-th-list"></span> Kontak</label>
+        <hr/>
+        <label> PIN BBM</label>
+        <?php echo $this->form->bbm ?>
+        <label><span class="fa fa-mobile"></span> Nomor HP</label>
+        <?php echo $this->form->hp ?>
+        <label><span class="fa fa-facebook-square"></span> URL Facebook</label>
+        <?php echo $this->form->fb ?>
+        <label><span class="fa fa-twitter-square"></span> Id Twitter</label>
+        <?php echo $this->form->tw ?>
+        <hr/>
+        <?php echo $this->form->update ?>
+</form>

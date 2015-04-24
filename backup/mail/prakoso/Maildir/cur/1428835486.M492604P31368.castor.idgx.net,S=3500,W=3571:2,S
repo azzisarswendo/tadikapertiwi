@@ -1,0 +1,71 @@
+Return-Path: <root-return-8-tadikapertiwi.com-prakoso=tadikapertiwi.com@tadikapertiwi.com>
+Delivered-To: tadikapertiwi.com-prakoso@tadikapertiwi.com
+Received: (qmail 31338 invoked by uid 3190); 12 Apr 2015 10:44:45 +0000
+Mailing-List: contact root-help@tadikapertiwi.com; run by ezmlm
+Reply-To: root@tadikapertiwi.com
+Sender: <root@tadikapertiwi.com>
+X-No-Archive: yes
+List-Post: <mailto:root@tadikapertiwi.com>
+List-Help: <mailto:root-help@tadikapertiwi.com>
+List-Unsubscribe: <mailto:root-unsubscribe@tadikapertiwi.com>
+List-Subscribe: <mailto:root-subscribe@tadikapertiwi.com>
+X-Message-Number: 8
+Delivered-To: mailing list root@tadikapertiwi.com
+Received: (qmail 31326 invoked by uid 342); 12 Apr 2015 10:44:45 +0000
+X-Incoming-Spam-Test-Scores: ALL_TRUSTED=-1,BAYES_00=-1.9,HTML_MESSAGE=0.001
+X-Incoming-Spam-Status: No, score=-2.9 required=5.0
+ tests=ALL_TRUSTED,BAYES_00, HTML_MESSAGE autolearn=ham autolearn_force=no
+ version=3.4.0
+X-Incoming-Spam-RelaysUntrusted: 
+X-Incoming-Spam-Checker-Version: SpamAssassin 3.4.0 (2014-02-07) on
+ castor.idgx.net
+X-Incoming-Spam-Level: 
+Received: from subs02-180-214-232-91.three.co.id (HELO [10.156.15.44])
+ (180.214.232.91) by incoming.castor.idgx.net (qpsmtpd/0.94) with ESMTPA ;
+ Sun, 12 Apr 2015 10:44:45 +0000
+Authentication-Results: incoming.castor.idgx.net; auth=pass (plain)
+ smtp.auth=mutia@tadikapertiwi.com
+Date: Sun, 12 Apr 2015 17:44:30 +0700
+Message-ID: <sbf2jqw2x0dntdtfkx5b2ioi.1428835470481@email.android.com>
+Importance: normal
+From: "mutia - mutia@tadikapertiwi.com"
+ <SRS0-QxOj=EZ=tadikapertiwi.com=mutia@tadikapertiwi.com>
+To: root@tadikapertiwi.com
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="--_com.android.email_992585966477420"
+Subject: RE: [root] Siswa Baru
+X-POP3-Rcpt: prakoso@tadikapertiwi.com
+X-Rcpt-To: prakoso@tadikapertiwi.com
+
+----_com.android.email_992585966477420
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: base64
+
+Z3VlIGdhayBuZ2VydGkgbWFrc3VkbnlhIHN1bXBhaAoKClNlbnQgZnJvbSBTYW1zdW5nIE1vYmls
+ZQoKLS0tLS0tLS0gT3JpZ2luYWwgbWVzc2FnZSAtLS0tLS0tLQpGcm9tOiBBenppcyBBcnN3ZW5k
+byA8YXp6aXNhcnN3ZW5kb0BnbWFpbC5jb20+IApEYXRlOiAxMi8wNC8yMDE1ICAxNzoyOSAgKEdN
+VCswNzowMCkgClRvOiByb290QHRhZGlrYXBlcnRpd2kuY29tIApTdWJqZWN0OiBbcm9vdF0gU2lz
+d2EgQmFydSAKIApOYW1hCTogQXp6aXMgQXJzd2VuZG8KRS1NYWlsCTogYXp6aXNhcnN3ZW5kb0Bn
+bWFpbC5jb20KQWxhbWF0CTogQ2luZXJlClNla29sYWgJOiBUYWRpa2FwZXJ0aXdpCk1lc3NhZ2UJ
+OiAKQmFnYWltYW5hIENhcmEgVW50dWsgTWVuZGFmdGFybnlhIFBhay9JYnU/Cgo=
+
+----_com.android.email_992585966477420
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: base64
+
+PGh0bWw+PGhlYWQ+PG1ldGEgaHR0cC1lcXVpdj0iQ29udGVudC1UeXBlIiBjb250ZW50PSJ0ZXh0
+L2h0bWw7IGNoYXJzZXQ9VVRGLTgiPjwvaGVhZD48Ym9keSA+PGRpdj5ndWUgZ2FrIG5nZXJ0aSBt
+YWtzdWRueWEgc3VtcGFoPC9kaXY+PGRpdj48YnI+PC9kaXY+PGRpdj48YnI+PC9kaXY+PGRpdj48
+ZGl2IHN0eWxlPSJmb250LXNpemU6NzUlO2NvbG9yOiM1NzU3NTciPlNlbnQgZnJvbSBTYW1zdW5n
+IE1vYmlsZTwvZGl2PjwvZGl2Pjxicj48YnI+PGJyPi0tLS0tLS0tIE9yaWdpbmFsIG1lc3NhZ2Ug
+LS0tLS0tLS08YnI+RnJvbTogQXp6aXMgQXJzd2VuZG8gJmx0O2F6emlzYXJzd2VuZG9AZ21haWwu
+Y29tJmd0OyA8YnI+RGF0ZTogMTIvMDQvMjAxNSAgMTc6MjkgIChHTVQrMDc6MDApIDxicj5Ubzog
+cm9vdEB0YWRpa2FwZXJ0aXdpLmNvbSA8YnI+U3ViamVjdDogW3Jvb3RdIFNpc3dhIEJhcnUgPGJy
+PiA8YnI+PGJyPk5hbWEJOiBBenppcyBBcnN3ZW5kbzxicj5FLU1haWwJOiBhenppc2Fyc3dlbmRv
+QGdtYWlsLmNvbTxicj5BbGFtYXQJOiBDaW5lcmU8YnI+U2Vrb2xhaAk6IFRhZGlrYXBlcnRpd2k8
+YnI+TWVzc2FnZQk6IDxicj5CYWdhaW1hbmEgQ2FyYSBVbnR1ayBNZW5kYWZ0YXJueWEgUGFrL0li
+dT88YnI+PGJyPjwvYm9keT4=
+
+----_com.android.email_992585966477420--
+
+

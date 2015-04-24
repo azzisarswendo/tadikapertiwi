@@ -1,0 +1,34 @@
+Received: from 88.subnet110-137-226.speedy.telkom.net.id ([110.137.226.88])
+ by mail.tadikapertiwi.com
+ with HTTP (HTTP/1.1 POST); Thu, 09 Apr 2015 06:39:28 +0000
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="=_9dbe10114ddaf88cb3ee6b34d15f3f3d"
+Date: Thu, 09 Apr 2015 06:39:28 +0000
+From: Admin <admin@tadikapertiwi.com>
+To: prakoso@tadikapertiwi.com
+Subject: test e-mail
+Message-ID: <35c15134-132f-4b6e-97de-7e53cb4c1c48@tadikapertiwi.com>
+X-Sender: admin@tadikapertiwi.com
+User-Agent: Roundcube Webmail/1.0.3
+
+--=_9dbe10114ddaf88cb3ee6b34d15f3f3d
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset=US-ASCII
+
+ 
+
+test 
+ 
+--=_9dbe10114ddaf88cb3ee6b34d15f3f3d
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=UTF-8
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+<html><body style=3D'font-size: 10pt; font-family: Verdana,Geneva,sans-seri=
+f'>
+<p>test</p>
+<div>&nbsp;</div>
+</body></html>
+
+--=_9dbe10114ddaf88cb3ee6b34d15f3f3d--

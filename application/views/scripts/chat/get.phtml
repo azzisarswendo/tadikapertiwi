@@ -1,0 +1,121 @@
+<?php   //USERS
+        if($_REQUEST["cmd"] == "users"):  
+            $_line = 0;
+            foreach($this->UserDb->all() as $UserDb):
+                if($UserDb['id_unik'] != $this->input) :
+                    if($_line != 0): ?>
+                        <div class="user-line"/>
+                    <?php 
+                    elseif($_line == 0) :
+                        $this->session = $UserDb['id_unik'];
+                    endif;    
+                    ?>
+                        
+                    <?php if($this->OnLine->cek($UserDb['id_unik']) == "on"){
+                        $class = "fa-circle";
+                        $color = "#19b724";
+                    }
+                    else{
+                        $class = "";
+                        $color = "";
+                    }
+                    $notif = "";
+                    $baru = $this->Chat->chack($this->input, $UserDb['id_unik']);
+                    if( $baru != "0"){
+                        $baru2 = $this->ChatKonten->chackBaru($baru, $UserDb['id_unik']);
+                        if($baru2 != 0){
+                            $notif = "$baru2";
+                        }
+                    }
+                    
+                    ?>
+
+                    <div class="user <?php echo $UserDb['id_unik']?>">
+                        <div class="user-pic" style=" background-color: <?php echo $UserDb['foto'];?> ">
+                            <span class="fa fa-user"/>  
+                        </div>
+                        <div class="user-nama">
+                            <?php echo $UserDb["nama"] . " <i>$notif</i> <span class='fa $class' style='color:$color; text-align: right; float: right; margin-top: 10%; text-shadow:0 0 0;'/>";?>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                    <script>
+                        $(".<?php echo $UserDb['id_unik']?>").click(function(){
+                            addChat("<?php echo $this->input ?>", "<?php echo $UserDb['id_unik']?>");
+                        })
+                    </script>
+                <?php endif;
+                $_line++;
+            endforeach;
+    endif;?>
+    
+<?php 
+        //ONLINE
+    if($_REQUEST["cmd"] == "online"):
+        $this->OnLine->online($this->input);
+    endif;
+    
+    
+    //CHACK
+    if($_REQUEST["cmd"] == "chack"):
+        $idb = $_REQUEST['idb'];
+        $ida = $_REQUEST['ida'];
+        $this->session = $idb;
+        $_chat = $this->Chat->chack("$ida", "$idb");
+        $_userB = $this->UserDb->tampilNama("$idb");
+        if($_chat == "0"):
+            echo "{'nama':'$_userB->nama','pesan':'Tidak Ada Pesan','idb':'$idb'}";
+        else:
+            $_chatKontent = $this->ChatKonten->chack($_chat);
+            if($_chatKontent == 0) :
+                echo "{'nama':'$_userB->nama','pesan':'Tidak Ada Pesan','idb':'$idb'}";
+            else :
+                
+                echo "{'nama':'$_userB->nama','pesan':'";
+                foreach($_chatKontent as $CheckKonten):
+                    $a = array(";","<",">","\"","'","\n","\t", "\\");
+                    $b = array("&semi;","&lt;","&gt;","&#34;","&CloseCurlyQuote;","<br/>","&nbsp;","&setmn;");
+                    $iss = str_replace($a, $b, $CheckKonten['isi_chat']);
+                    $orang = $this->UserDb->tampilNama($CheckKonten["id_user"])->nama;
+                    if($CheckKonten["id_user"] == $this->input) :
+                        $orang = "Saya";
+                    ?><div class=isi><div class=orang id=saya><?php echo $orang ?></div><div class=pesan id=saya><?php echo $this->Emoji->Emoji($CheckKonten['isi_chat'], $this->baseUrl()."/img") ?></div></div><div class=clear></div><?php
+                    else : ?><div class=isi><div class=orang><?php echo $orang ?></div><div class=pesan><?php echo $this->Emoji->Emoji($CheckKonten['isi_chat'], $this->baseUrl()."/img") ?></div></div><?php 
+                    $this->ChatKonten->readPesan($CheckKonten["chat_konten_id"]);
+                    endif;
+                    
+                    endforeach;
+                echo "','idb':'$idb'}";
+            endif;
+        endif;
+    endif;
+    
+    if($_REQUEST["cmd"] == "send") :
+        $idb = $_REQUEST['idb'];
+        $ida = $_REQUEST['ida'];
+        $isi = $_REQUEST['isi'];
+        $_kode = $this->CodeRandom;
+        $_chat = $this->Chat->chack("$ida", "$idb"); 
+        if($_chat == "0"):
+            $this->Chat->addUser($_kode, $ida, $idb);
+        endif;
+        $_chat = $this->Chat->chack("$ida", "$idb");
+        $this->ChatKonten->addChat("$_kode", "$_chat", "$ida", "$isi");
+    endif;
+    if($_REQUEST['cmd'] == "emoji"):
+        ?>
+            <?php
+               foreach($this->EmojiA->showAllEmoji() as $emoji):?>
+                    <img src="<?php echo $this->baseUrl().'/img'.$emoji['str_b'];?>" class="tp<?php echo $emoji['id'];?>"/>
+                    <script>
+                        $(".tp<?php echo $emoji['id'];?>").click(function(){
+                            $('.emo .btnA').click();  $('.input-chat .input').val($('.input-chat .input').val()+'<?php echo $emoji['str_a'];?>');
+                        });
+                    </script>
+                <?php        
+                    endforeach;
+                ?>
+            
+            <?php
+    endif;
+    ?>

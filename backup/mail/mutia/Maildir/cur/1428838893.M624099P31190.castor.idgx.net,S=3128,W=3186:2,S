@@ -1,0 +1,58 @@
+Return-Path: <azzisarswendo@tadikapertiwi.com>
+Delivered-To: tadikapertiwi.com-mutia@tadikapertiwi.com
+Received: (qmail 31178 invoked by uid 342); 12 Apr 2015 11:41:33 +0000
+X-Incoming-Spam-Test-Scores: ALL_TRUSTED=-1,BAYES_00=-1.9,HTML_MESSAGE=0.001
+X-Incoming-Spam-Status: No, score=-2.9 required=5.0 tests=ALL_TRUSTED,BAYES_00,
+		HTML_MESSAGE autolearn=ham autolearn_force=no version=3.4.0
+X-Incoming-Spam-RelaysUntrusted: 
+X-Incoming-Spam-Checker-Version: SpamAssassin 3.4.0 (2014-02-07) on castor.idgx.net
+X-Incoming-Spam-Level: 
+Received: from Unknown (HELO localhost) (139.195.50.157)
+ by incoming.castor.idgx.net (qpsmtpd/0.94) with ESMTPA ; Sun, 12 Apr 2015 11:41:33 +0000
+Authentication-Results: incoming.castor.idgx.net; auth=pass (plain) smtp.auth=azzisarswendo@tadikapertiwi.com
+Date: Sun, 12 Apr 2015 18:41:28 +0700
+Subject: Re: [root] Siswa Baru
+Message-ID: <47motmj5d44tw86cxc8a3khw.1428838888556@email.android.com>
+Importance: normal
+From: Azzis Arswendo <azzisarswendo@tadikapertiwi.com>
+To: mutia@tadikapertiwi.com
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="--_com.android.email_27651791503907"
+X-POP3-Rcpt: mutia@tadikapertiwi.com
+X-Rcpt-To: mutia@tadikapertiwi.com
+
+----_com.android.email_27651791503907
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: base64
+
+SGFydXMgbG8gcGVyaGF0aWluICJUbyJueWEuLiBLYW4gZGVmYXVsdG55YSByb290QHRhZGlrYXBl
+cnRpd2kuY29tClRlcnVzIGxvIGdhbnRpIHBha2UgZW1haWwgdXNlci4uCgpLYW4gZGkgaXNpIHBl
+c2FubnlhICJFLU1haWwiID0gYXp6aXNhcmF3ZW5kb0BnbWFpbC5jb20KCllhIGxvICJUbyJpbiBr
+ZSBhenppc2Fyc3dlbmRvQGdtYWlsLmNvbQoKU2VudCBmcm9tIFNhbXN1bmcgTW9iaWxlCgpBenpp
+cyBBcnN3ZW5kbyA8YXp6aXNhcnN3ZW5kb0BnbWFpbC5jb20+IHdyb3RlOgoKTmFtYQk6IEF6emlz
+IEFyc3dlbmRvCkUtTWFpbAk6IGF6emlzYXJzd2VuZG9AZ21haWwuY29tCkFsYW1hdAk6IENpbmVy
+ZQpTZWtvbGFoCTogVGFkaWthcGVydGl3aQpNZXNzYWdlCTogCkJhZ2FpbWFuYSBDYXJhIFVudHVr
+IE1lbmRhZnRhcm55YSBQYWsvSWJ1PwoK
+
+----_com.android.email_27651791503907
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: base64
+
+PGh0bWw+PGhlYWQ+PG1ldGEgaHR0cC1lcXVpdj0iQ29udGVudC1UeXBlIiBjb250ZW50PSJ0ZXh0
+L2h0bWw7IGNoYXJzZXQ9VVRGLTgiPjxsaW5rIHJlbD0ic3R5bGVzaGVldCIgbWVkaWE9InNjcmVl
+biBhbmQgKC13ZWJraXQtZGV2aWNlLXBpeGVsLXJhdGlvOjAuNzUpIiBocmVmPSJsZHBpLmNzcyI+
+PG1ldGEgbmFtZT0idmlld3BvcnQiIGNvbnRlbnQ9InRhcmdldC1kZW5zaXR5ZHBpPWRldmljZS1k
+cGkiPjwvaGVhZD48Ym9keT5IYXJ1cyBsbyBwZXJoYXRpaW4gIlRvIm55YS4uIEthbiBkZWZhdWx0
+bnlhIHJvb3RAdGFkaWthcGVydGl3aS5jb208ZGl2PlRlcnVzIGxvIGdhbnRpIHBha2UgZW1haWwg
+dXNlci4uPC9kaXY+PGRpdj48YnI+S2FuIGRpIGlzaSBwZXNhbm55YSAiRS1NYWlsIiA9IGF6emlz
+YXJhd2VuZG9AZ21haWwuY29tPC9kaXY+PGRpdj48YnI+PC9kaXY+PGRpdj5ZYSBsbyAiVG8iaW4g
+a2UgYXp6aXNhcnN3ZW5kb0BnbWFpbC5jb208YnI+PGJyPjxmb250IHNpemU9IjIiPlNlbnQgZnJv
+bSBTYW1zdW5nIE1vYmlsZTwvZm9udD48L2Rpdj48YnI+PGJyPjxicj5BenppcyBBcnN3ZW5kbyAm
+bHQ7YXp6aXNhcnN3ZW5kb0BnbWFpbC5jb20mZ3Q7IHdyb3RlOjxicj48YnI+PGJyPk5hbWEJOiBB
+enppcyBBcnN3ZW5kbzxicj5FLU1haWwJOiBhenppc2Fyc3dlbmRvQGdtYWlsLmNvbTxicj5BbGFt
+YXQJOiBDaW5lcmU8YnI+U2Vrb2xhaAk6IFRhZGlrYXBlcnRpd2k8YnI+TWVzc2FnZQk6IDxicj5C
+YWdhaW1hbmEgQ2FyYSBVbnR1ayBNZW5kYWZ0YXJueWEgUGFrL0lidT88YnI+PGJyPjwvYm9keT4=
+
+----_com.android.email_27651791503907--
+
+

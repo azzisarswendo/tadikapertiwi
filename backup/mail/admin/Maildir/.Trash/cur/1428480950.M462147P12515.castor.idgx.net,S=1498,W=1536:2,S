@@ -1,0 +1,38 @@
+Received: from 88.subnet110-137-226.speedy.telkom.net.id ([110.137.226.88])
+ by mail.tadikapertiwi.com
+ with HTTP (HTTP/1.1 POST); Wed, 08 Apr 2015 08:15:49 +0000
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="=_2a8d3c92cd4109c14ff96067e3ca81d6"
+Date: Wed, 08 Apr 2015 08:15:49 +0000
+From: Admin <admin@tadikapertiwi.com>
+To: azzisarswendo@tadikapertiwi.com, prakoso@tadikapertiwi.com,
+ muta@tadikapertiwi.com, sam@tadikapertiwi.com
+Subject: Site Admin
+Message-ID: <4ff6d63d-62b6-409b-8e66-87e50523a93f@tadikapertiwi.com>
+X-Sender: admin@tadikapertiwi.com
+User-Agent: Roundcube Webmail/1.0.3
+
+--=_2a8d3c92cd4109c14ff96067e3ca81d6
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset=US-ASCII
+
+ Administrator's
+login:admintadikapertiwiPassword:keongracunAdministrator's
+email:admin@tadikapertiwi.comSite name:Tadika Pertiwi 
+ 
+--=_2a8d3c92cd4109c14ff96067e3ca81d6
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=UTF-8
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+<html><body style=3D'font-size: 10pt; font-family: Verdana,Geneva,sans-seri=
+f'>
+<dl><dt></dt><dt></dt><dt>Administrator's login:</dt><dd>admintadikapertiwi=
+</dd><dt>Password:</dt><dd><span class=3D"maskedpassword" data-password=3D"=
+keongracun">keongracun</span></dd><dt>Administrator's email:</dt><dd>admin@=
+tadikapertiwi.com</dd><dt>Site name:</dt><dd>Tadika Pertiwi</dd></dl>
+<div>&nbsp;</div>
+</body></html>
+
+--=_2a8d3c92cd4109c14ff96067e3ca81d6--

@@ -1,0 +1,85 @@
+<section>
+        <h1>Jadwal Pelajaran</h1>
+        <hr/>
+        <?php foreach ($this->kelas as $kelas) :?>
+        <form method="post">
+        <div class="table-wrapper">
+            <h2>Kelas <?php echo $kelas["nama"]; ?></h2>
+            <input type="hidden" name="kelas" value="<?php echo $kelas["kode"]; ?>"/>
+            <table class="alt">
+                <thead>
+                    <tr>
+                        <th>Senin</th>
+                        <th>Selasa</th>
+                        <th>Rabu</th>
+                        <th>Kamis</th>
+                        <th>Jumat</th>
+                        <th>Sabtu</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php $i = 0; foreach($this->jadwal->tampilSetiapKelas($kelas["kode"]) as $jadwal):?>
+                    <tr>
+                        <td>
+                            <select name="senin[<?php echo $i; ?>]">
+                                <option value="<?php echo $jadwal["senin"];?>"><?php echo $jadwal["senin"];?></option>
+                                <option value="">-Kosong-</option>
+                                <?php foreach ($this->mapel as $mapel):?>
+                                <option value="<?php echo $mapel["mapel"];?>"><?php echo $mapel["mapel"];?></option>
+                                <?php endforeach;?>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="selasa[<?php echo $i; ?>]">
+                                <option value="<?php echo $jadwal["selasa"];?>"><?php echo $jadwal["selasa"];?></option>
+                                <option value="">-Kosong-</option>
+                                <?php foreach ($this->mapel as $mapel):?>
+                                <option value="<?php echo $mapel["mapel"];?>"><?php echo $mapel["mapel"];?></option>
+                                <?php endforeach;?>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="rabu[<?php echo $i; ?>]">
+                                <option value="<?php echo $jadwal["rabu"];?>"><?php echo $jadwal["rabu"];?></option>
+                                <option value="">-Kosong-</option>
+                                <?php foreach ($this->mapel as $mapel):?>
+                                <option value="<?php echo $mapel["mapel"];?>"><?php echo $mapel["mapel"];?></option>
+                                <?php endforeach;?>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="kamis[<?php echo $i; ?>]">
+                                <option value="<?php echo $jadwal["kamis"];?>"><?php echo $jadwal["kamis"];?></option>
+                                <option value="">-Kosong-</option>
+                                <?php foreach ($this->mapel as $mapel):?>
+                                <option value="<?php echo $mapel["mapel"];?>"><?php echo $mapel["mapel"];?></option>
+                                <?php endforeach;?>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="jumat[<?php echo $i; ?>]">
+                                <option value="<?php echo $jadwal["jumat"];?>"><?php echo $jadwal["jumat"];?></option>
+                                <option value="">-Kosong-</option>
+                                <?php foreach ($this->mapel as $mapel):?>
+                                <option value="<?php echo $mapel["mapel"];?>"><?php echo $mapel["mapel"];?></option>
+                                <?php endforeach;?>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="sabtu[<?php echo $i; ?>]">
+                                <option value="<?php echo $jadwal["sabtu"];?>"><?php echo $jadwal["sabtu"];?></option>
+                                <option value="">-Kosong-</option>
+                                <?php foreach ($this->mapel as $mapel):?>
+                                <option value="<?php echo $mapel["mapel"];?>"><?php echo $mapel["mapel"];?></option>
+                                <?php endforeach;?>
+                            </select>
+                        </td>
+                    </tr>
+                    <?php $i++; endforeach;?>
+                </tbody>
+            </table>
+        </div>
+            <input type="submit" name="simpan" value="Simpan <?php echo $kelas["nama"]; ?>"/>
+        </form>
+        <?php   endforeach;?>
+</section>

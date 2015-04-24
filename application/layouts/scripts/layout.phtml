@@ -1,0 +1,167 @@
+<?php if(isset($this->feed)) :?>
+<!DOCTYPE html>
+<html>
+	<head>
+		<title><?php echo $this->Title?></title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+                <link rel='shortcut icon' type='image/vnd.microsoft.icon' href='/img/favicon.ico'> <!-- IE -->
+                <link rel='apple-touch-icon' type='image/png' href='/img/logo.png'> <!-- iPhone -->
+                <link rel='apple-touch-icon' type='image/png' sizes='72x72' href='/img/logo.png'> <!-- iPad -->
+                <link rel='apple-touch-icon' type='image/png' sizes='114x114' href='/img/logo.png'> <!-- iPhone4 -->
+                <link rel='icon' type='image/png' href='/img/logo.png'>
+		<script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+		<?php //echo $this->headScript()->appendFile($this->baseUrl()."/js/jquery.min.js");?>
+		<?php echo $this->headScript()->appendFile($this->baseUrl()."/js/bootstrap.js");?>
+                <?php echo $this->headScript()->appendFile($this->baseUrl().'/plugin/ckeditor/ckeditor.js');?>
+
+                <?php echo $this->headLink()->prependStylesheet($this->baseUrl()."/css/bootstrap.css");?>
+		<?php echo $this->headLink()->prependStylesheet($this->baseUrl().'/plugin/ckeditor/samples/sample.css'); ?>
+
+		<?php echo $this->headScript()->appendFile($this->baseUrl()."/js/jquery.poptrox.min.js");?>
+		<?php echo $this->headScript()->appendFile($this->baseUrl()."/js/skel.min.js");?>
+		<?php echo $this->headScript()->appendFile($this->baseUrl()."/js/init.js");?>
+                <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/2.2-latest/MathJax.js?config=TeX-AMS_HTML"></script>
+                <?php echo $this->headScript()->appendFile($this->baseUrl().'/plugin/ckeditor/plugins/codesnippet/lib/highlight/highlight.pack.js');?>
+		<style>
+			pre {
+				animation : none;     animation-delay : 0;     animation-direction : normal;     animation-duration : 0;     animation-fill-mode : none;     animation-iteration-count : 1;     animation-name : none;     animation-play-state : running;     animation-timing-function : ease;     backface-visibility : visible;     background : 0;     background-attachment : scroll;     background-clip : border-box;     background-color : transparent;     background-image : none;     background-origin : padding-box;     background-position : 0 0;     background-position-x : 0;     background-position-y : 0;     background-repeat : repeat;     background-size : auto auto;     border : 0;     border-style : none;     border-width : medium;     border-color : inherit;     border-bottom : 0;     border-bottom-color : inherit;     border-bottom-left-radius : 0;     border-bottom-right-radius : 0;     border-bottom-style : none;     border-bottom-width : medium;     border-collapse : separate;     border-image : none;     border-left : 0;     border-left-color : inherit;     border-left-style : none;     border-left-width : medium;     border-radius : 0;     border-right : 0;     border-right-color : inherit;     border-right-style : none;     border-right-width : medium;     border-spacing : 0;     border-top : 0;     border-top-color : inherit;     border-top-left-radius : 0;     border-top-right-radius : 0;     border-top-style : none;     border-top-width : medium;     bottom : auto;     box-shadow : none;     box-sizing : content-box;     caption-side : top;     clear : none;     clip : auto;     color : inherit;     columns : auto;     column-count : auto;     column-fill : balance;     column-gap : normal;     column-rule : medium none currentColor;     column-rule-color : currentColor;     column-rule-style : none;     column-rule-width : none;     column-span : 1;     column-width : auto;     content : normal;     counter-increment : none;     counter-reset : none;     cursor : auto;     direction : ltr;     display : inline;     empty-cells : show;     float : none;     font : normal;     font-family : inherit;     font-size : medium;     font-style : normal;     font-variant : normal;     font-weight : normal;     height : auto;     hyphens : none;     left : auto;     letter-spacing : normal;     line-height : normal;     list-style : none;     list-style-image : none;     list-style-position : outside;     list-style-type : disc;     margin : 0;     margin-bottom : 0;     margin-left : 0;     margin-right : 0;     margin-top : 0;     max-height : none;     max-width : none;     min-height : 0;     min-width : 0;     opacity : 1;     orphans : 0;     outline : 0;     outline-color : invert;     outline-style : none;     outline-width : medium;     overflow : visible;     overflow-x : visible;     overflow-y : visible;     padding : 0;     padding-bottom : 0;     padding-left : 0;     padding-right : 0;     padding-top : 0;     page-break-after : auto;     page-break-before : auto;     page-break-inside : auto;     perspective : none;     perspective-origin : 50% 50%;     position : static;     /* May need to alter quotes for different locales (e.g fr) */     quotes : '\201C' '\201D' '\2018' '\2019';     right : auto;     tab-size : 8;     table-layout : auto;     text-align : inherit;     text-align-last : auto;     text-decoration : none;     text-decoration-color : inherit;     text-decoration-line : none;     text-decoration-style : solid;     text-indent : 0;     text-shadow : none;     text-transform : none;     top : auto;     transform : none;     transform-style : flat;     transition : none;     transition-delay : 0s;     transition-duration : 0s;     transition-property : none;     transition-timing-function : ease;     unicode-bidi : normal;     vertical-align : baseline;     visibility : visible;     white-space : normal;     widows : 0;     width : auto;     word-spacing : normal;     z-index : auto;
+			}
+		</style>
+                <?php echo $this->headLink()->prependStylesheet($this->baseUrl().'/plugin/ckeditor/plugins/codesnippet/lib/highlight/styles/monokai_sublime.css'); ?>
+                <script>hljs.initHighlightingOnLoad();</script>
+                
+		<noscript>
+                        <?php echo $this->headLink()->prependStylesheet($this->baseUrl().'/plugin/ckeditor/samples/sample.css'); ?>
+                        <?php echo $this->headLink()->prependStylesheet($this->baseUrl().'/plugin/ckeditor/plugins/codesnippet/lib/highlight/styles/monokai_sublime.css'); ?>
+                        <?php echo $this->headLink()->prependStylesheet($this->baseUrl()."/css/bootstrap.css");?>
+			<?php echo $this->headLink()->prependStylesheet($this->baseUrl()."/css/skel.css");?>
+			<?php echo $this->headLink()->prependStylesheet($this->baseUrl()."/css/style.css");?>
+			<?php echo $this->headLink()->prependStylesheet($this->baseUrl()."/css/style-xlarge.css");?>
+		</noscript>
+                <style>
+                    #hapus:hover, .hapus:hover{
+                        border-color: #ff2867;
+                        color: #ff2867;
+                    }
+                </style>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+                
+	</head>
+	<body id="top">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="<?php echo $this->url(array('controller' => 'index', 'action' => 'index'))?>" class="image avatar"><img src="<?php echo $this->baseUrl()?>/images/logo.png" alt="" /></a>
+                                <h1><strong><?php echo $this->Title?></strong></h1><br/><h1> <?php echo $this->Slogan?></h1>
+			</header>
+                            <nav class="navbar navbar-fixed-bottom navbar-default">
+                                <div class="container-fluid">
+                                    <!-- Brand and toggle get grouped for better mobile display -->
+                                    <div class="navbar-header">
+                                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                            <span class="sr-only">Toggle navigation</span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                    </div>
+
+                                  <!-- Collect the nav links, forms, and other content for toggling -->
+                                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                        <ul class="nav navbar-nav">
+                                            <li <?php if($this->nav == "index") echo 'class="active"'; ?>><a href="<?php echo $this->url(array('controller' => 'index', 'action' => 'index'))?>">Home</a></li>
+                                            <?php if($this->input != "tidak"): ?>
+                                            <li <?php if($this->nav == "tambahmateri") echo 'class="active"'; ?> ><a id="tambahmateri" href="<?php echo $this->url(array('controller' => 'index', 'action' => 'tambahmateri', "id" => null))?>">Tambah Materi</a></li>
+                                            <?php endif;?>
+                                            <li <?php if($this->nav == "jadwal") echo 'class="active"'; ?> ><a href="<?php echo $this->url(array('controller' => 'index', 'action' => 'jadwal', "id" => null))?>">Jadwal Pelajaran</a></li>
+                                            <?php if($this->input != "tidak"): ?>
+                                            <li <?php if($this->nav == "chat") echo 'class="active"'; ?> ><a href="<?php echo $this->url(array('controller' => 'chat', 'action' => 'index', "id" => null))?>">Chat Teman</a></li>
+                                            <li <?php if($this->nav == "editmateri") echo 'class="active"'; ?> ><a href="<?php echo $this->url(array('controller' => 'index', 'action' => 'editmateri', "id" => null))?>">Edit Materi</a></li>
+                                            <?php endif;?>
+                                            <li <?php if($this->nav == "tentang") echo 'class="active"'; ?> ><a id="tentang" href="<?php echo $this->url(array('controller' => 'index', 'action' => 'tentang', "id" => null))?>">Tentang</a></li>
+                                            <?php if($this->input != "tidak"): ?>
+                                            <li <?php if($this->nav == "profil") echo 'class="active"'; ?> ><a href="<?php echo $this->url(array('controller' => 'index', 'action' => 'profil', "id" => null))?>"><?php echo $this->nama; ?> <b style="color: #3300cc">(<?php echo $this->levelNama; ?>)</b></a></li>
+                                            <li><a href="<?php echo $this->url(array('controller' => 'index', 'action' => 'keluar'))?>">Keluar</a></li>
+                                            <?php else : ?>
+                                            <li <?php if($this->nav == "daftar") echo 'class="active"'; ?> ><a href="<?php echo $this->url(array('controller' => 'index', 'action' => 'daftar', "id" => null))?>">Masuk / Daftar</a></li>
+                                            <?php endif;?>
+                                            <!--li class="dropdown">
+                                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                                                    <ul class="dropdown-menu" role="menu">
+                                                        <li><a href="#">Action</a></li>
+                                                        <li><a href="#">Another action</a></li>
+                                                        <li><a href="#">Something else here</a></li>
+                                                        <li class="divider"></li>
+                                                        <li><a href="#">Separated link</a></li>
+                                                        <li class="divider"></li>
+                                                    <li><a href="#">One more separated link</a></li>
+                                                </ul>
+                                            </li-->
+                                        </ul>
+                                    </div><!-- /.navbar-collapse -->
+                                </div><!-- /.container-fluid -->
+                            </nav>
+                
+		<!-- Main -->
+			<div id="main">
+                            <?php echo $this->layout()->content; ?>
+                            <section id="three">
+                                <h2>Didukung Oleh :</h2> 
+                                <div class="row  jumbotron">                               
+                                    <div class="2u 12u$(small)">
+                                        <div class="row uniform 50%">
+                                            <div class="12u$">
+                                                <br/>
+                                                <br/>
+                                                <a href="https://indoglobal.com">
+                                                    <img class="img img-responsive" src="http://tadikapertiwi.com/img/indogloballogo.png"/>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="2u$ 12u$(small)">
+                                        <div class="row uniform 50%">
+                                            <div class="12u$">
+                                                <a href="http://panjatpinang.tadikapertiwi.com">
+                                                    <img class="img img-responsive" src="<?php echo $this->baseUrl(). "/img/panjatpinangfix.png"?>"/>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<ul class="icons">
+					<li><a href="http://fb.com/tadikapertiwi" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+					<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+					<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+					<li><a href="mailto:root@tadikapertiwi.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+				</ul>
+				<ul class="copyright">
+                                        <?php
+                                            //tahun copyright
+                                            function cr(){
+                                                if(date("Y") == 2014){
+                                                    return date("Y");
+                                                }
+                                                else {
+                                                    return "2014 - ". date("Y");
+                                                }
+                                            }
+                                        ?>
+                                    <li>Copyright &copy; <?php echo cr() ?></li><li>Program By : <a target="blank" href="http://panjatpinang.tadikapertiwi.com">Panjat PInang</a></li>
+				</ul>
+			</footer>
+                <br/><br/>
+	</body>
+</html>
+<?php else : ?>
+<?php echo $this->layout()->content; ?>
+<?php endif; ?>

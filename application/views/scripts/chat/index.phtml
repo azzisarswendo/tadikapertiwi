@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TP Chat | <?php echo $this->nama;?></title>
+        <?php echo $this->headLink()->prependStylesheet($this->baseUrl()."/css/perfect-scrollbar.css"); ?>
+        <?php echo $this->headLink()->prependStylesheet($this->baseUrl()."/css/font-awesome.min.css"); ?>
+        <?php echo $this->headLink()->prependStylesheet($this->baseUrl()."/style/style.css");?>
+        <?php echo $this->headScript()->appendFile($this->baseUrl()."/js/vendor/jquery-1.11.0.js");?>
+        <?php echo $this->headScript()->appendFile($this->baseUrl()."/js/perfect-scrollbar.jquery.js");?>
+        <?php echo $this->headScript()->appendFile($this->baseUrl()."/js/perfect-scrollbar.js");?>
+        <?php echo $this->headScript()->appendFile($this->baseUrl()."/js/main1.js");?>
+        <script>
+            $(document).ready(function(){
+                CSS();
+                online();
+                setInterval(function(){
+                    online();
+                    CSS();
+                }, 1000);
+                user();
+                emo();
+                setInterval(function(){
+                    emo();
+                    idb = $(".idb").val();
+                    if(idb != null)
+                    addChat("<?php echo $this->input ?>", idb);
+                    user();
+                }, 5000);
+                
+                //$(".users").perfectScrollbar();
+                
+                //$(".kanan .body").perfectScrollbar();
+                $('.scroll').perfectScrollbar();
+                $('.scroll').on('keyup','textarea',function(){
+                    $(this).height(0).height( this.scrollHeight );
+                    $('.scroll').scrollTop($(this).outerHeight());
+                    $('.scroll').perfectScrollbar();
+                });
+                $('.scroll').find( '.input' ).keyup();
+                
+                $(".emo .emoSmua").hide();
+                
+                $(".emo .emoSmua").slideUp("fast");
+                
+                $(".emo .btnA").click(function(){
+                    $(".emo .emoSmua").slideToggle("fast");
+                    $(".scroll").slideToggle('fast');
+                    $(".tombol").slideToggle("fast");
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="main">
+            <div class="body">
+                <div class="kiri">
+                <div class="body">
+                    <h2>
+                        <?php echo $this->nama;?>
+                    </h2>
+                    <hr class="underline"/>
+                    <div class="users">
+                    </div>
+                </div>
+                </div>
+                <div class="kanan">
+                    <div class="body1">
+                        <h2 class=".nama-user">
+                            Nama User
+                        </h2>
+                        <hr class="underline"/>
+                    </div>
+                    <div class="body">
+                    </div>
+                    <div class="input-chat">
+                        <div class="emo">
+                            <img class="btnA" src="<?php echo $this->baseUrl().'/img/emo/Smiley-1_24.png';?>">
+                            <div class="emoSmua">
+                                
+                            </div>
+                        </div>
+                        <div class="scroll">
+                            <textarea class="input" placeholder="Ketik Pesan :)"></textarea>
+                        </div>
+                        <button class="tombol fa fa-send-o"></button>
+                        <script>
+                            $(".tombol").click(function(){
+                                idb = $(".idb").val();
+                                isi = $(".input").val();
+                                kirimPesan("<?php echo $this->input ?>", idb, isi);
+                                        
+                                $(".input").select();
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                
+            </div>
+        </div>
+        <input type="hidden" class="uri" value="<?php echo $this->url(array('controller' => 'chat', 'action' => 'get'))?>"/>
+    </body>
+</html>

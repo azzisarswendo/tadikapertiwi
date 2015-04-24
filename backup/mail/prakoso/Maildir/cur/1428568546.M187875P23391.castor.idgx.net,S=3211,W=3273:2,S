@@ -1,0 +1,62 @@
+Return-Path: <root-return-2-tadikapertiwi.com-prakoso=tadikapertiwi.com@tadikapertiwi.com>
+Delivered-To: tadikapertiwi.com-prakoso@tadikapertiwi.com
+Received: (qmail 23361 invoked by uid 3190); 9 Apr 2015 08:35:45 +0000
+Mailing-List: contact root-help@tadikapertiwi.com; run by ezmlm
+Reply-To: root@tadikapertiwi.com
+Sender: <root@tadikapertiwi.com>
+X-No-Archive: yes
+List-Post: <mailto:root@tadikapertiwi.com>
+List-Help: <mailto:root-help@tadikapertiwi.com>
+List-Unsubscribe: <mailto:root-unsubscribe@tadikapertiwi.com>
+List-Subscribe: <mailto:root-subscribe@tadikapertiwi.com>
+X-Message-Number: 2
+Delivered-To: mailing list root@tadikapertiwi.com
+Received: (qmail 23347 invoked by uid 360); 9 Apr 2015 08:35:45 +0000
+X-Spam-Test-Scores: BAYES_00=-1.9,DKIM_SIGNED=0.1,DKIM_VALID=-0.1,
+ DKIM_VALID_AU=-0.1,FREEMAIL_FROM=0.001,RCVD_IN_DNSWL_LOW=-0.7,
+ RCVD_IN_MSPIKE_H2=-0.001,SPF_PASS=-0.001
+X-Spam-Status: No, score=-2.7 required=5.0 tests=BAYES_00,DKIM_SIGNED,
+ DKIM_VALID,DKIM_VALID_AU,FREEMAIL_FROM,RCVD_IN_DNSWL_LOW,RCVD_IN_MSPIKE_H2,
+ SPF_PASS autolearn=ham autolearn_force=no version=3.4.0
+X-Spam-RelaysUntrusted: [ ip=209.85.192.171 rdns=mail-pd0-f171.google.com
+ helo=mail-pd0-f171.google.com by=incoming.castor.idgx.net ident= envfrom=
+ intl=0 id= auth= msa=0 ] [ ip=110.137.226.88 rdns= helo=!10.233.3.212!
+ by=mx.google.com ident= envfrom= intl=0
+ id=w9sm13692301pdm.89.2015.04.09.01.35.40 auth=ESMTPSA msa=0 ]
+X-Spam-Checker-Version: SpamAssassin 3.4.0 (2014-02-07) on castor.idgx.net
+X-Spam-Level: 
+Received: from mail-pd0-f171.google.com (HELO mail-pd0-f171.google.com)
+ (209.85.192.171) by incoming.castor.idgx.net (qpsmtpd/0.93) with
+ (AES128-GCM-SHA256 encrypted) ESMTPS; Thu, 09 Apr 2015 08:35:45 +0000
+Authentication-Results: incoming.castor.idgx.net; auth=none; iprev=pass;
+ spf=pass smtp.mailfrom=gmail.com; dkim=pass header.i=@gmail.com; dmarc=pass
+ (p=none) d=gmail.com
+Received-SPF: pass (gmail.com ... _spf.google.com: Sender is authorized to
+ use 'azzisarswendo@gmail.com' in 'mfrom' identity (mechanism
+ 'include:_netblocks.google.com' matched)) receiver=castor.idgx.net;
+ identity=mailfrom; envelope-from="azzisarswendo@gmail.com";
+ helo=mail-pd0-f171.google.com; client-ip=209.85.192.171
+X-HELO: mail-pd0-f171.google.com
+Received: by pdbqa5 with SMTP id qa5so88338811pdb.1 for
+ <root@tadikapertiwi.com>; Thu, 09 Apr 2015 01:35:42 -0700 (PDT)
+X-Received: by 10.68.230.137 with SMTP id sy9mr53464793pbc.111.1428568541938;
+ Thu, 09 Apr 2015 01:35:41 -0700 (PDT)
+Received: from [10.233.3.212] ([110.137.226.88]) by mx.google.com with
+ ESMTPSA id w9sm13692301pdm.89.2015.04.09.01.35.40 for
+ <root@tadikapertiwi.com> (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256
+ bits=128/128); Thu, 09 Apr 2015 01:35:41 -0700 (PDT)
+Message-ID: <552639DA.20103@gmail.com>
+Date: Thu, 09 Apr 2015 15:35:38 +0700
+From: Azzis Arswendo <azzisarswendo@gmail.com>
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:31.0) Gecko/20100101
+ Thunderbird/31.5.0
+MIME-Version: 1.0
+To: root@tadikapertiwi.com
+Content-Type: text/plain; charset=utf-8; format=flowed
+Content-Transfer-Encoding: 7bit
+Subject: [root] Test Coy
+X-POP3-Rcpt: prakoso@tadikapertiwi.com
+X-Rcpt-To: prakoso@tadikapertiwi.com
+
+Hahahahaha Bagus
+

@@ -1,0 +1,196 @@
+<?php if($this->idmateri == null) :?>
+<section>
+<div class="table-wrapper">
+    <table>
+        <thead>
+            <tr>
+                <th>Judul</th>
+                <th>Lihat</th>
+                <th>Edit</th>
+                <th>Mata Pelajaran</th>
+                <th>Tanggal</th>
+                <th>Pembuat</th>
+            </tr>
+        </thead>
+        <tbody>
+    <?php foreach ($this->materi as $materi) :?>
+            <?php if($materi->user == $this->input):?>
+            <tr>
+                <td><a href="<?php echo $this->url(array('controller'=>'index','action'=>'materi','id'=>$materi->id_materi))?>"><?php echo $materi->judul?></a></td>
+                <td><a href="<?php echo $this->url(array('controller'=>'index','action'=>'materi','id'=>$materi->id_materi))?>">Lihat</a></td>
+                <td><a href="<?php echo $this->url(array('controller' => 'index', 'action' => 'editmateri', 'id' => $materi->id_materi))?>">Edit</a></td>
+                <td><?php echo $materi->mapel; ?></td>
+                <td><?php echo $materi->tanggal . " " . $materi->bulan . " " . $materi->tahun; ?></td>
+                <td><?php echo $this->user->ambil($materi->user)->nama; ?></td>
+            </tr>
+            <?php endif;?>
+    <?php endforeach;?>
+        </tbody>
+    </table>
+</div>
+</section>
+<?php else :?>
+<?php if(isset($this->pesanerror)):?>
+<div class="alert alert-danger fade in" role="alert">
+      <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+      <?php echo $this->pesanerror;?>
+    </div>
+<?php endif;
+if(isset($this->pesan)):?>
+<div class="alert alert-success fade in" role="alert">
+      <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+      <?php echo $this->pesan.' (';?><a href="<?php echo $this->url(array('controller'=>'index','action'=>'materi','id'=>$this->id))?>"><?php echo $this->judul;?></a>).
+    </div>
+<?php endif;?>
+
+<section>
+    <h1>Edit Materi Pelajaran</h1>
+    <hr/>
+    <form role="form" method="post" action="">
+        <div class="row uniform 50%">
+            <div class="6u 12u$(xsmall)">
+                <label>Edit Mata Pelajaran</label>
+                <?php echo $this->form->mapel;?>
+                <?php echo $this->form->id;?>
+            </div>
+            <div class="6u$ 12u$(xsmall)">
+                <label>Edit Tanggal</label>
+                <?php echo $this->form->tanggal;?>
+                <hr/>
+                <?php echo $this->form->bulan;?>
+                <hr/>
+                <?php echo $this->form->tahun;?>
+            </div>
+            <div class="12u$">
+                <label>Edit Judul Materi</label>
+                <?php echo $this->form->judul;?>
+            </div>
+            <div class="12u$">
+                <label>Edit Isi Materi</label>
+                <?php echo $this->form->isi;?>
+                <hr/>
+                <?php echo $this->form->simpan;?> Atau <?php echo $this->form->hapus;?>
+                <script>
+                    $("#hapus").click(function(){if(confirm("Beneran Mau Dihapus Cok?")== true){return true;}else{return false;}});
+                </script>
+            </div>
+        </div>
+    </form>
+</section>
+<script>
+    CKEDITOR.plugins.registered['save'] = {
+      init: function (editor) {
+         var command = editor.addCommand('save',
+         {
+              modes: { wysiwyg: 1, source: 1 },
+              exec: function (editor) { // Add here custom function for the save button
+                  $("#simpan").click();
+              }
+         });
+         editor.ui.addButton('Save', { label: 'Save', command: 'save' });
+      }
+      
+    }
+</script>
+<script>
+    CKEDITOR.plugins.registered['newpage'] = {
+      init: function (editor) {
+      }
+      
+    }
+</script>
+<script>
+    CKEDITOR.plugins.registered['about'] = {
+        init: function (editor) {
+         var command = editor.addCommand('about',
+         {
+              modes: { wysiwyg: 1, source: 1 },
+              exec: function (editor) { // Add here custom function for the save button
+                  window.open("<?php echo $this->url(array('controller' => 'index', 'action' => 'tentang', "id" => null))?>", "_blank")
+              }
+         });
+         editor.ui.addButton('About', { label: 'About', command: 'about' });
+      }
+      
+    }
+</script>
+<script>
+CKEDITOR.replace( 'tx', {
+	toolbar : [
+	{ 
+            name: 'document', 
+            groups: [ 'mode', 'document', 'doctools' ], 
+            items: [ 'Source', '-', 'Save', 'NewPage', 'Preview', 'Print', '-', 'Templates' ] 
+        },
+	{ 
+            name: 'clipboard', 
+            groups: [ 'clipboard', 'undo' ], 
+            items: [ 'Cut', 'Copy', 'Paste', 'PasteText', 'PasteFromWord', '-', 'Undo', 'Redo' ] 
+        },
+	{ 
+            name: 'editing', 
+            groups: [ 'find', 'selection', 'spellchecker' ], 
+            items: [ 'Find', 'Replace', '-', 'SelectAll', '-', 'Scayt' ] 
+        },
+	{ 
+            name: 'forms', 
+            items: [ 'Form', 'Checkbox', 'Radio', 'TextField', 'Textarea', 'Select', 'Button', 'ImageButton', 'HiddenField' ] 
+        },
+	{ 
+            name: 'basicstyles', 
+            groups: [ 'basicstyles', 'cleanup' ], 
+            items: [ 'Bold', 'Italic', 'Underline', 'Strike', 'Subscript', 'Superscript', '-', 'RemoveFormat' ] 
+        },
+	{ 
+            name: 'paragraph', 
+            groups: [ 'list', 'indent', 'blocks', 'align', 'bidi' ], 
+            items: [ 'NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'Blockquote', 'CreateDiv', '-', 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock', '-', 'BidiLtr', 'BidiRtl', 'Language' ] 
+        },
+	{ 
+            name: 'links', items: [ 'Link', 'Unlink'] 
+        },
+	{ 
+            name: 'insert', items: [ 'Image', 'Flash', 'Table', 'HorizontalRule', 'Smiley', 'SpecialChar', 'PageBreak', 'Iframe', 'CodeSnippet', 'Mathjax' ] 
+        },
+	{ 
+            name: 'styles', 
+            items: [ 'Styles', 'Format', 'Font', 'FontSize' ] 
+        },
+	{ 
+            name: 'colors', 
+            items: [ 'TextColor', 'BGColor' ] 
+        },
+	{ 
+            name: 'tools', 
+            items: [ 'Maximize', 'ShowBlocks' ] 
+        },
+	{ 
+            name: 'others', 
+            items: [ '-' ] 
+        },
+	{ 
+            name: 'about', 
+            items: [ 'About' ] 
+        }
+],
+
+// Toolbar groups configuration.
+toolbarGroups : [
+	{ name: 'document', groups: [ 'mode', 'document', 'doctools' ] },
+	{ name: 'clipboard', groups: [ 'clipboard', 'undo' ] },
+	{ name: 'editing', groups: [ 'find', 'selection', 'spellchecker' ] },
+	{ name: 'forms' },
+	{ name: 'basicstyles', groups: [ 'basicstyles', 'cleanup' ] },
+	{ name: 'paragraph', groups: [ 'list', 'indent', 'blocks', 'align', 'bidi' ] },
+	{ name: 'links' },
+	{ name: 'insert' },
+	{ name: 'styles' },
+	{ name: 'colors' },
+	{ name: 'tools' },
+	{ name: 'others' },
+	{ name: 'about' }
+],
+	// NOTE: Remember to leave 'toolbar' property with the default value (null).
+});
+</script>
+<?php endif; ?>

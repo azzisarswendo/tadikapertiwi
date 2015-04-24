@@ -1,0 +1,209 @@
+Return-Path: <support@twitter.com>
+Delivered-To: tadikapertiwi.com-admin@tadikapertiwi.com
+Received: (qmail 13425 invoked by uid 360); 14 Apr 2015 02:24:02 +0000
+X-Spam-Test-Scores: BAYES_00=-1.9,DKIM_SIGNED=0.1,DKIM_VALID=-0.1,
+		DKIM_VALID_AU=-0.1,HTML_MESSAGE=0.001,RCVD_IN_DNSWL_LOW=-0.7,
+		RCVD_IN_MSPIKE_H2=-0.001,SPF_PASS=-0.001,T_RP_MATCHES_RCVD=-0.01
+X-Spam-Status: No, score=-2.7 required=5.0 tests=BAYES_00,DKIM_SIGNED,
+		DKIM_VALID,DKIM_VALID_AU,HTML_MESSAGE,RCVD_IN_DNSWL_LOW,RCVD_IN_MSPIKE_H2,
+		SPF_PASS,T_RP_MATCHES_RCVD autolearn=ham autolearn_force=no version=3.4.0
+X-Spam-RelaysUntrusted: [ ip=199.59.150.75 rdns=spruce-goose-af.twitter.com
+		helo=spruce-goose-af.twitter.com by=incoming.castor.idgx.net ident= envfrom=
+		intl=0 id= auth= msa=0 ]
+X-Spam-Checker-Version: SpamAssassin 3.4.0 (2014-02-07) on castor.idgx.net
+X-Spam-Level: 
+Received: from spruce-goose-af.twitter.com (HELO spruce-goose-af.twitter.com) (199.59.150.75)
+ by incoming.castor.idgx.net (qpsmtpd/0.93) with (AES256-SHA encrypted) ESMTPS; Tue, 14 Apr 2015 02:24:01 +0000
+Authentication-Results: incoming.castor.idgx.net; auth=none; iprev=pass; spf=pass smtp.mailfrom=twitter.com; dkim=pass header.i=@twitter.com; dmarc=pass (p=reject) d=twitter.com
+X-DKIM-Authentication: domain: twitter.com, selector: dkim-201406, result: pass, policy: o=~; t=y, name: sender, policy_location: twitter.com, policy_result: accept, policy: o=~, name: author, policy_result: accept, policy: , name: ADSP, policy_result: accept
+Received-SPF: pass (twitter.com: 199.59.150.75 is authorized to use 'support@twitter.com' in 'mfrom' identity (mechanism 'ip4:199.59.148.0/22' matched)) receiver=castor.idgx.net; identity=mailfrom; envelope-from="support@twitter.com"; helo=spruce-goose-af.twitter.com; client-ip=199.59.150.75
+X-HELO: spruce-goose-af.twitter.com
+Return-Path: <support@twitter.com>
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=twitter.com;
+	s=dkim-201406; t=1428978239;
+	bh=3y9VzdarNBxZVHKvk2Kx2D+0Ck6q6CRFaV6GRRyDmuk=;
+	h=Date:From:To:Subject:MIME-Version:Content-Type:Message-ID;
+	b=kOR/dItn43Y/CtoD6NGmeG6QlDuIAX0P7gUnCBsYVOBzMc+nYJvNHvB5izfyjf3PZ
+	 e22NKtuR6KHfq4K+bb5CnJ/G/a83kJ9bVK+u4/OiOq8wLNeSXO8NeaEmotqYjgO/Tn
+	 62TNhy/q93Q3DZH33YWcjPK/gJEhQ3/thbTAKT1aQGaiSjDMmNbo1NyTosWPbKFCts
+	 lPxnof3QDlu53Wl8U6uoNz2ohAbCMT6WN4821qxkerDJ+RDuzSMcvEN29CBZGI/Fjc
+	 /rJ9ncf/5ltXUFxRWVoph4n3OHYiLe0MO0G5yFUcZlXDfK8ZRkUcPFDYgpbWGOX7BU
+	 RHfeDKXNxAsWg==
+X-SFDC-Interface: internal
+Date: Tue, 14 Apr 2015 02:23:59 +0000 (GMT)
+From: Twitter Support <support@twitter.com>
+To: "admin@tadikapertiwi.com" <admin@tadikapertiwi.com>
+Subject: Case# 14651635: I can't log in
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_24398_1243058702.1428978239481"
+X-Sender: postmaster@salesforce.com
+X-mail_abuse_inquiries: http://www.salesforce.com/company/abuse.jsp
+X-SFDC-EmailCategory: workflowActionAlert
+X-SFDC-EntityId: 01WG0000000LlxQ
+X-SFDC-Binding: 1WrIRBV94myi25uB
+Message-ID: <68.40.56226.F3A7C255@mail.twitter.com>
+X-POP3-Rcpt: admin@tadikapertiwi.com
+X-Rcpt-To: admin@tadikapertiwi.com
+
+------=_Part_24398_1243058702.1428978239481
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+=C2=A0
+
+The email address used to file this request does not match the email on the=
+ account you mentioned (yahoo.com). We=E2=80=99re not able to provide furth=
+er information about the associated email. Please try the tips below for he=
+lp accessing your account:
+=C2=A0
+Recovering your account with a verified mobile device:
+
+If you added a mobile number to the account, you can request a password res=
+et via text message/SMS: https://twitter.com/account/begin_password_resetIf=
+ you're still logged in via mobile.twitter.com or an official Twitter mobil=
+e app (such as the apps listed here: http://twitter.com/download), reply to=
+ this email as we may be able to assist you.
+
+Resetting your password via email:
+
+If you=E2=80=99re unsure which email you used, enter any possible email add=
+resses on this page:=C2=A0https://twitter.com/account/begin_password_resetI=
+f you can access the email address but aren=E2=80=99t receiving our passwor=
+d reset emails, please file a new support request using the email address a=
+ssociated with the account: https://support.twitter.com/formsIf you=E2=80=
+=99ve lost access to the email address associated with this account, contac=
+t your email provider for assistance. More info here: https://support.twitt=
+er.com/articles/107907Please note: An email address can only be associated =
+with one Twitter account at a time.
+
+If this is an organization or company account, please reply to this email a=
+nd we may be able to help you.=C2=A0
+
+If you file a new support request, feel free to reply to this email with yo=
+ur new case number. We'll get back to you ASAP.
+
+=C2=A0
+
+Thanks,
+
+=C2=A0
+
+Twitter Support
+
+http://support.twitter.com
+
+@Support
+------=_Part_24398_1243058702.1428978239481
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/htm=
+l4/strict.dtd">
+<html>
+<head>
+
+</head>
+<body style=3D"margin:0px">
+<div style=3D"width:100%; -webkit-text-size-adjust:none; -webkit-font-smoot=
+hing: antialiased; background-color:#e1e8ed;=20
+            margin-top: 0px; padding-bottom: 50px;padding-top: 50px; font-f=
+amily: 'Helvetica Neue Light', Helvetica, Arial, sans-serif;=20
+            font-weight: 300; line-height: 100%;font-size: 16px; -webkit-fo=
+nt-smoothing: antialiased;">
+    <div style=3D"max-width: 560px; background-color: white; margin-left: a=
+uto; margin-right: auto; border: 1px solid #E8E8E8">
+        <!--template header-->
+        <div style=3D"border-bottom:1px solid #E8E8E8; height:40px; padding=
+-top:15px; padding-left:15px">
+            <img align=3D"left" width=3D"36" style=3D"opacity: 0.7; margin-=
+right: 5px" src=3D"http://twitterinc.force.com/resource/TSC_CaseEmailLogo"/=
+>
+
+            <div style=3D"margin-top:7px; color: #66757f">
+                @tadikapertiwi
+            </div>
+        </div>
+
+        <!--template body-->
+        <div style=3D"padding-top:20px; padding-bottom: 36px; padding-left:=
+50px; padding-right:50px">
+            <div>Hello,</div>
+
+<div>=C2=A0</div>
+
+<div>The email address used to file this request does not match the email o=
+n the account you mentioned (yahoo.com). We=E2=80=99re not able to provide =
+further information about the associated email. Please try the tips below f=
+or help accessing your account:<br>=C2=A0
+<div>Recovering your account with a verified mobile device:</div>
+
+<ul><li>If you added a mobile number to the account, you can request a pass=
+word reset via text message/SMS: https://twitter.com/account/begin_password=
+_reset</li><li><b>If you&#39;re still logged in via mobile.twitter.com or a=
+n official Twitter mobile app (such as the apps listed here: http://twitter=
+.com/download), reply to this email as we may be able to assist you.</b></l=
+i></ul>
+</div>
+
+<div>Resetting your password via email:</div>
+
+<ul><li>If you=E2=80=99re unsure which email you used, enter any possible e=
+mail addresses on this page:=C2=A0https://twitter.com/account/begin_passwor=
+d_reset</li><li>If you can access the email address but aren=E2=80=99t rece=
+iving our password reset emails, please file a new support request using th=
+e email address associated with the account: https://support.twitter.com/fo=
+rms</li><li>If you=E2=80=99ve lost access to the email address associated w=
+ith this account, contact your email provider for assistance. More info her=
+e: https://support.twitter.com/articles/107907</li><li>Please note: An emai=
+l address can only be associated with one Twitter account at a time.</li></=
+ul>
+
+<div>If this is an organization or company account, please reply to this em=
+ail and we may be able to help you.=C2=A0<br><br>If you file a new support =
+request, feel free to reply to this email with your new case number. We&#39=
+;ll get back to you ASAP.</div>
+
+<div>=C2=A0</div>
+
+<div>Thanks,</div>
+
+<div>=C2=A0</div>
+
+<div>Twitter Support</div>
+
+<div>http://support.twitter.com</div>
+
+<div>@Support</div>
+        </div>
+
+        <div style=3D"border-bottom:1px solid #E8E8E8; padding-top:36px; pa=
+dding-bottom:36px; padding-left: 50px; padding-right:50px; color:#aab8c2">
+            Reference #ref:00DA0000000K0A8.500G000000gvDlU:ref
+        </div>
+
+        <!--template footer-->
+        <div style=3D"border-bottom:1px solid #E8E8E8; height:70px; padding=
+-top:20px; padding-left:50px; padding-right:50px">
+            <div style=3D"color:#55acee;font-size:12px; text-align: center;=
+ font-weight: 600;line-height: 12px;">
+                <a style=3D"text-decoration: none;border-style: none;border=
+: 0;color: #55acee;font-weight: 600" href=3D"http://support.twitter.com">He=
+lp</a>
+            </div>
+            <div style=3D"font-size: 12px;text-align: center;margin-top:10p=
+x;color: #66757f">
+                Twitter, Inc. 1355 Market Street, Suite 900 San Francisco, =
+CA 94103
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
+------=_Part_24398_1243058702.1428978239481--
+

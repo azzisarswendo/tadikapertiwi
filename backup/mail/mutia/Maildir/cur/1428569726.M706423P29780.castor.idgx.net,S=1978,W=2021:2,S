@@ -1,0 +1,43 @@
+Return-Path: <prakoso@tadikapertiwi.com>
+Delivered-To: tadikapertiwi.com-mutia@tadikapertiwi.com
+Received: (qmail 29774 invoked by uid 342); 9 Apr 2015 08:55:26 +0000
+X-Incoming-Spam-Test-Scores: ALL_TRUSTED=-1,BAYES_00=-1.9,HTML_MESSAGE=0.001
+X-Incoming-Spam-Status: No, score=-2.9 required=5.0 tests=ALL_TRUSTED,BAYES_00,
+		HTML_MESSAGE autolearn=ham autolearn_force=no version=3.4.0
+X-Incoming-Spam-RelaysUntrusted: 
+X-Incoming-Spam-Checker-Version: SpamAssassin 3.4.0 (2014-02-07) on castor.idgx.net
+X-Incoming-Spam-Level: 
+Received: from 88.subnet110-137-226.speedy.telkom.net.id (HELO 10.233.3.132) (110.137.226.88)
+ by incoming.castor.idgx.net (qpsmtpd/0.94) with ESMTPA ; Thu, 09 Apr 2015 08:55:26 +0000
+Authentication-Results: incoming.castor.idgx.net; auth=pass (plain) smtp.auth=Prakoso@tadikapertiwi.com
+Date: Thu, 09 Apr 2015 15:55:19 +0700
+Subject: tes
+Message-ID: <xewlxjrr3aj8p2a7iv3r8rb2.1428569719093@email.android.com>
+Importance: normal
+From: Prakoso <prakoso@tadikapertiwi.com>
+To: mutia@tadikapertiwi.com
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="--_com.android.email_42280545471599"
+X-POP3-Rcpt: mutia@tadikapertiwi.com
+X-Rcpt-To: mutia@tadikapertiwi.com
+
+----_com.android.email_42280545471599
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: base64
+
+CmNodmhqaGdqdmcKClRlcmtpcmltIGRhcmkgU2Ftc3VuZyBNb2JpbGU=
+
+----_com.android.email_42280545471599
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: base64
+
+PGh0bWw+PGhlYWQ+PG1ldGEgaHR0cC1lcXVpdj0iQ29udGVudC1UeXBlIiBjb250ZW50PSJ0ZXh0
+L2h0bWw7IGNoYXJzZXQ9VVRGLTgiPjxsaW5rIHJlbD0ic3R5bGVzaGVldCIgbWVkaWE9InNjcmVl
+biBhbmQgKC13ZWJraXQtZGV2aWNlLXBpeGVsLXJhdGlvOjAuNzUpIiBocmVmPSJsZHBpLmNzcyI+
+PG1ldGEgbmFtZT0idmlld3BvcnQiIGNvbnRlbnQ9InRhcmdldC1kZW5zaXR5ZHBpPWRldmljZS1k
+cGkiPjwvaGVhZD48Ym9keT48YnI+Y2h2aGpoZ2p2Zzxicj48YnI+PGZvbnQgc2l6ZT0iMiI+VGVy
+a2lyaW0gZGFyaSBTYW1zdW5nIE1vYmlsZTwvZm9udD4gPC9ib2R5PjwvaHRtbD4=
+
+----_com.android.email_42280545471599--
+
+

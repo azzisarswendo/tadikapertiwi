@@ -1,0 +1,454 @@
+Return-Path: <azzisarswendo@gmail.com>
+Delivered-To: tadikapertiwi.com-azzisarswendo@tadikapertiwi.com
+Received: (qmail 13400 invoked by uid 360); 9 Apr 2015 03:27:43 +0000
+X-Spam-Test-Scores: BAYES_00=-1.9,DKIM_SIGNED=0.1,DKIM_VALID=-0.1,
+		DKIM_VALID_AU=-0.1,FREEMAIL_FROM=0.001,HTML_MESSAGE=0.001,
+		RCVD_IN_DNSWL_LOW=-0.7,RCVD_IN_MSPIKE_H2=-0.001,SPF_PASS=-0.001,
+		SPOOF_COM2OTH=2.723
+X-Spam-Status: No, score=0.0 required=5.0 tests=BAYES_00,DKIM_SIGNED,
+		DKIM_VALID,DKIM_VALID_AU,FREEMAIL_FROM,HTML_MESSAGE,RCVD_IN_DNSWL_LOW,
+		RCVD_IN_MSPIKE_H2,SPF_PASS,SPOOF_COM2OTH autolearn=no autolearn_force=no
+		version=3.4.0
+X-Spam-RelaysUntrusted: [ ip=209.85.192.175 rdns=mail-pd0-f175.google.com
+		helo=mail-pd0-f175.google.com by=incoming.castor.idgx.net ident= envfrom=
+		intl=0 id= auth= msa=0 ] [ ip=110.137.226.88 rdns= helo=!10.233.3.212!
+		by=mx.google.com ident= envfrom= intl=0
+		id=in4sm12519390pbd.40.2015.04.08.20.27.38 auth=ESMTPSA msa=0 ]
+X-Spam-Checker-Version: SpamAssassin 3.4.0 (2014-02-07) on castor.idgx.net
+X-Spam-Level: 
+Received: from mail-pd0-f175.google.com (HELO mail-pd0-f175.google.com) (209.85.192.175)
+ by incoming.castor.idgx.net (qpsmtpd/0.93) with (AES128-GCM-SHA256 encrypted) ESMTPS; Thu, 09 Apr 2015 03:27:42 +0000
+Authentication-Results: incoming.castor.idgx.net; auth=none; iprev=pass; spf=pass smtp.mailfrom=gmail.com; dkim=pass header.i=@gmail.com; dmarc=pass (p=none) d=gmail.com
+X-DKIM-Authentication: domain: gmail.com, selector: 20120113, result: pass, policy: o=~, name: sender, policy_result: accept, policy: o=~, name: author, policy_result: accept, policy: , name: ADSP, policy_result: accept
+Received-SPF: pass (gmail.com ... _spf.google.com: Sender is authorized to use 'azzisarswendo@gmail.com' in 'mfrom' identity (mechanism 'include:_netblocks.google.com' matched)) receiver=castor.idgx.net; identity=mailfrom; envelope-from="azzisarswendo@gmail.com"; helo=mail-pd0-f175.google.com; client-ip=209.85.192.175
+X-HELO: mail-pd0-f175.google.com
+Received: by pdbnk13 with SMTP id nk13so137628399pdb.0
+        for <azzisarswendo@tadikapertiwi.com>; Wed, 08 Apr 2015 20:27:40 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20120113;
+        h=message-id:date:from:user-agent:mime-version:to:subject:references
+         :in-reply-to:content-type;
+        bh=RSDbocXkssqkDoBqJ0daJ/CAK3ns0H95G1KgIY4Srt8=;
+        b=GV+Ih2ehWW9eL/izJequzinoZ+ME/VsUXmtH/RFjhUjAP8w3kRlSXUoQKdRPjwpMiT
+         jL3HNnasMj94oigpNR0VdZ/snDKu4DBOgisvyNatTCpx3lj60VLSQhHEgpvo0P2Qvchd
+         mZ8wSDdU7kc6fcN+N66n9UYPX5Z3L2rw0TqUxnDMqEIJkabb5fG52kFDdA9UunwMIWbv
+         djSz/CJm+wA3yL2XjtvqNW4UNfoM8dvE+qQ/2ih0KbMdGNsIC8X/QbrCBYlXNSZ4//KE
+         clreni8p+cF/DEUMVys7h7/KnUBR9zPIAJd0mp1AjzA0XVi4hOEG/+fP3zb8pjKcnwFp
+         dR1A==
+X-Received: by 10.70.13.67 with SMTP id f3mr52787471pdc.26.1428550060718;
+        Wed, 08 Apr 2015 20:27:40 -0700 (PDT)
+Return-Path: <azzisarswendo@gmail.com>
+Received: from [10.233.3.212] ([110.137.226.88])
+        by mx.google.com with ESMTPSA id in4sm12519390pbd.40.2015.04.08.20.27.38
+        for <azzisarswendo@tadikapertiwi.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 08 Apr 2015 20:27:39 -0700 (PDT)
+Message-ID: <5525F1A8.3020408@gmail.com>
+Date: Thu, 09 Apr 2015 10:27:36 +0700
+From: Azzis Arswendo <azzisarswendo@gmail.com>
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:31.0) Gecko/20100101 Thunderbird/31.5.0
+MIME-Version: 1.0
+To: azzisarswendo@tadikapertiwi.com
+Subject: Fwd: INDOGLOBAL>COM Informasi Akun Baru / New Account Information
+References: <CA+nq7Pjm4mAkyjXRUtg=1LwkSZdtYcg0T9O2ufw4S5ikVBpBWw@mail.gmail.com>
+In-Reply-To: <CA+nq7Pjm4mAkyjXRUtg=1LwkSZdtYcg0T9O2ufw4S5ikVBpBWw@mail.gmail.com>
+X-Forwarded-Message-Id: <CA+nq7Pjm4mAkyjXRUtg=1LwkSZdtYcg0T9O2ufw4S5ikVBpBWw@mail.gmail.com>
+Content-Type: multipart/alternative;
+ boundary="------------040402060906030603040801"
+X-POP3-Rcpt: azzisarswendo@tadikapertiwi.com
+X-Rcpt-To: azzisarswendo@tadikapertiwi.com
+
+This is a multi-part message in MIME format.
+--------------040402060906030603040801
+Content-Type: text/plain; charset=utf-8; format=flowed
+Content-Transfer-Encoding: 7bit
+
+
+
+
+-------- Forwarded Message --------
+Subject: 	INDOGLOBAL>COM Informasi Akun Baru / New Account Information
+Date: 	Wed, 8 Apr 2015 14:36:30 +0700
+From: 	Azzis <kidsattack45@gmail.com>
+To: 	matsanjee@gmail.com, mutia4398@gmail.com, artprakoso@gmail.com, 
+azzis arswendo <azzisarswendo@gmail.com>
+
+
+
+indoglobal.com <https://indoglobal.com>
+
+Dengan hormat,
+
+*MOHON UNTUK MEMBACA EMAIL INI DAN MENYIMPANNYA UNTUK CATATAN ANDA*
+
+Terima kasih atas pesanan anda! Akun hosting anda telah selesai diatur 
+dan email ini berisi informasi yang anda butuhkan untuk memulai 
+menggunakan akun anda.
+
+*Informasi Akun Baru*
+
+Paket Hosting: Hosting-C
+Domain: tadikapertiwi.com <http://tadikapertiwi.com>
+Jumlah Pembayaran Pertama: Rp 282,049
+Jumlah Pembayaran Berkala: Rp 552,000
+Perioda Penagihan: setiap tahun
+Tanggal Penagihan Berikutnya: 2016-04-15
+
+*Detail Login*
+
+Username: u10321rqs
+Password: wx6X1bp7Q6
+URL Control Panel: https://control.castor.idgx.net/
+
+*Informasi DNS*
+
+Jika anda menggunakan domain yang telah didaftarkan sebelumnya untuk 
+akun hosting anda, anda perlu memperbaharui informasi DNS server sebagai 
+berikut.
+
+Nameserver 1: dns1.castor.idgx.net <http://dns1.castor.idgx.net> 
+(23.250.125.106)
+Nameserver 2: dns2.castor.idgx.net <http://dns2.castor.idgx.net> 
+(23.250.125.110)
+
+Jika domain anda belum berfungsi, anda dapat mengakses situs web anda 
+dengan menambahkan akhiran 'alias.castor.idgx.net 
+<http://alias.castor.idgx.net>' pada nama domain dan subdomain yang ada 
+di akun anda. Sebagai contoh, untuk mengakses 'tadikapertiwi.com 
+<http://tadikapertiwi.com>' anda dapat menggunakan nama 
+'tadikapertiwi.com.alias.castor.idgx.net 
+<http://tadikapertiwi.com.alias.castor.idgx.net>'.
+
+*Mengunggah Situs Web *
+
+Silakan login ke control panel untuk informasi lebih lanjut untuk 
+mengunggah situs web anda.
+
+*Mengakses Email*
+
+Silakan login ke control panel untuk membuat akun email. Kemudian anda 
+dapat mengakses email anda melalui web melalui 
+http://mail.tadikapertiwi.com. Untuk metoda akses email lainnya (POP, 
+IMAP, dsb), silakan login ke control panel untuk informasi lebih lanjut.
+
+*Informasi Lebih Lanjut*
+
+Untuk Informasi lebih lanjut, anda dapat melihat panduan penggunaan kami 
+di http://docs.indoglobal.com.
+
+Terima kasih untuk mempercayakan situs web anda kepada kami.
+
+Ikuti kami melalui media sosial untuk mendapatkan informasi-informasi 
+terbaru:
+Facebook:fb.com/indoglobalcom <http://fb.com/indoglobalcom> 
+Twitter:@indoglobalcom <http://twitter.com/indoglobalcom> 
+Google+:gplus.indoglobal.com <http://gplus.indoglobal.com>
+
+PT Indoglobal Jejaring Solusi - http://indoglobal.com - 
+info@indoglobal.com <mailto:info@indoglobal.com>
+Phone: +62-21-77216633 <tel:+62-21-77216633> +62-21-77216644 
+<tel:+62-21-77216644>. Fax: +62-21-77216655
+
+----------
+
+Dear customer,
+
+*PLEASE READ THIS EMAIL IN FULL AND PRINT IT FOR YOUR RECORDS*
+
+Thank you for your order from us! Your hosting account has now been 
+setup and this email contains all the information you will need in order 
+to begin using your account.
+
+*New Account Information*
+
+Hosting Package: Hosting-C
+Domain: tadikapertiwi.com <http://tadikapertiwi.com>
+First Payment Amount: Rp 282,049
+Recurring Amount: Rp 552,000
+Billing Cycle: setiap tahun
+Next Due Date: 2016-04-15
+
+*Login Details*
+
+Username: u10321rqs
+Password: wx6X1bp7Q6
+Control Panel URL: https://control.castor.idgx.net/
+
+*DNS Information*
+
+If you are using an existing domain with your new hosting account, you 
+will need to update the nameservers to point to the nameservers listed 
+below.
+
+Nameserver 1: dns1.castor.idgx.net <http://dns1.castor.idgx.net> 
+(23.250.125.106)
+Nameserver 2: dns2.castor.idgx.net <http://dns2.castor.idgx.net> 
+(23.250.125.110)
+
+If your domain name is not yet working, you may access your web site by 
+appending 'alias.castor.idgx.net <http://alias.castor.idgx.net>' to any 
+domain and subdomain under your account. For example, to access 
+'tadikapertiwi.com <http://tadikapertiwi.com>' you may use the name 
+'tadikapertiwi.com.alias.castor.idgx.net 
+<http://tadikapertiwi.com.alias.castor.idgx.net>'.
+
+*Uploading Your Website*
+
+Please login to control panel for more information on uploading your web 
+site.
+
+*Accessing Your Email*
+
+Please login to control panel to create an email account. You will be 
+able to access your emails using web based mail from 
+http://mail.tadikapertiwi.com. For other methods of accessing your 
+emails (POP, IMAP, etc), please login to control panel for more information.
+
+*More Information*
+
+For further information about managing your account, you can refer to 
+our online documentation at http://docs.indoglobal.com.
+
+Thank you for choosing us.
+
+Ikuti kami melalui media sosial untuk mendapatkan informasi-informasi 
+terbaru:
+Facebook:fb.com/indoglobalcom <http://fb.com/indoglobalcom> 
+Twitter:@indoglobalcom <http://twitter.com/indoglobalcom> 
+Google+:gplus.indoglobal.com <http://gplus.indoglobal.com>
+
+PT Indoglobal Jejaring Solusi - http://indoglobal.com - 
+info@indoglobal.com <mailto:info@indoglobal.com>
+Phone: +62-21-77216633 <tel:+62-21-77216633> +62-21-77216644 
+<tel:+62-21-77216644>. Fax: +62-21-77216655
+
+
+
+--------------040402060906030603040801
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <head>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  </head>
+  <body bgcolor="#FFFFFF" text="#000000">
+    <br>
+    <div class="moz-forward-container"><br>
+      <br>
+      -------- Forwarded Message --------
+      <table class="moz-email-headers-table" border="0" cellpadding="0"
+        cellspacing="0">
+        <tbody>
+          <tr>
+            <th align="RIGHT" nowrap="nowrap" valign="BASELINE">Subject:
+            </th>
+            <td>INDOGLOBAL&gt;COM Informasi Akun Baru / New Account
+              Information</td>
+          </tr>
+          <tr>
+            <th align="RIGHT" nowrap="nowrap" valign="BASELINE">Date: </th>
+            <td>Wed, 8 Apr 2015 14:36:30 +0700</td>
+          </tr>
+          <tr>
+            <th align="RIGHT" nowrap="nowrap" valign="BASELINE">From: </th>
+            <td>Azzis <a class="moz-txt-link-rfc2396E" href="mailto:kidsattack45@gmail.com">&lt;kidsattack45@gmail.com&gt;</a></td>
+          </tr>
+          <tr>
+            <th align="RIGHT" nowrap="nowrap" valign="BASELINE">To: </th>
+            <td><a class="moz-txt-link-abbreviated" href="mailto:matsanjee@gmail.com">matsanjee@gmail.com</a>, <a class="moz-txt-link-abbreviated" href="mailto:mutia4398@gmail.com">mutia4398@gmail.com</a>,
+              <a class="moz-txt-link-abbreviated" href="mailto:artprakoso@gmail.com">artprakoso@gmail.com</a>, azzis arswendo
+              <a class="moz-txt-link-rfc2396E" href="mailto:azzisarswendo@gmail.com">&lt;azzisarswendo@gmail.com&gt;</a></td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <br>
+      <div dir="ltr">
+        <div class="gmail_default" style="font-family:comic sans
+          ms,sans-serif">
+          <p><a moz-do-not-send="true" href="https://indoglobal.com"
+              target="_blank"><img moz-do-not-send="true"
+                alt="indoglobal.com" border="0"></a></p>
+          <p>Dengan hormat,</p>
+          <p align="center"><strong>MOHON UNTUK MEMBACA EMAIL INI DAN
+              MENYIMPANNYA UNTUK CATATAN ANDA</strong></p>
+          <p>Terima kasih atas pesanan anda! Akun hosting anda telah
+            selesai diatur dan email ini berisi informasi yang anda
+            butuhkan untuk memulai menggunakan akun anda.</p>
+          <p><strong>Informasi Akun Baru</strong></p>
+          <p>Paket Hosting: Hosting-C<br>
+            Domain: <a moz-do-not-send="true"
+              href="http://tadikapertiwi.com" target="_blank">tadikapertiwi.com</a><br>
+            Jumlah Pembayaran Pertama: Rp 282,049<br>
+            Jumlah Pembayaran Berkala: Rp 552,000<br>
+            Perioda Penagihan: setiap tahun<br>
+            Tanggal Penagihan Berikutnya: 2016-04-15</p>
+          <p><strong>Detail Login</strong></p>
+          <p>Username: u10321rqs<br>
+            Password: wx6X1bp7Q6<br>
+            URL Control Panel: <a moz-do-not-send="true" title=""
+              href="https://control.castor.idgx.net/" target="_blank">https://control.castor.idgx.net/</a></p>
+          <p><strong>Informasi DNS</strong></p>
+          <p>Jika anda menggunakan domain yang telah didaftarkan
+            sebelumnya untuk akun hosting anda, anda perlu memperbaharui
+            informasi DNS server sebagai berikut.</p>
+          <p>Nameserver 1: <a moz-do-not-send="true"
+              href="http://dns1.castor.idgx.net" target="_blank">dns1.castor.idgx.net</a>
+            (23.250.125.106)<br>
+            Nameserver 2: <a moz-do-not-send="true"
+              href="http://dns2.castor.idgx.net" target="_blank">dns2.castor.idgx.net</a>
+            (23.250.125.110)</p>
+          <p>Jika domain anda belum berfungsi, anda dapat mengakses
+            situs web anda dengan menambahkan akhiran '<a
+              moz-do-not-send="true" href="http://alias.castor.idgx.net"
+              target="_blank">alias.castor.idgx.net</a>' pada nama
+            domain dan subdomain yang ada di akun anda. Sebagai contoh,
+            untuk mengakses '<a moz-do-not-send="true"
+              href="http://tadikapertiwi.com" target="_blank">tadikapertiwi.com</a>'
+            anda dapat menggunakan nama '<a moz-do-not-send="true"
+              href="http://tadikapertiwi.com.alias.castor.idgx.net"
+              target="_blank">tadikapertiwi.com.alias.castor.idgx.net</a>'.</p>
+          <p><strong>Mengunggah Situs Web </strong></p>
+          <p>Silakan login ke control panel untuk informasi lebih lanjut
+            untuk mengunggah situs web anda.</p>
+          <p><strong>Mengakses Email</strong></p>
+          <p>Silakan login ke control panel untuk membuat akun email.
+            Kemudian anda dapat mengakses email anda melalui web melalui
+            <a moz-do-not-send="true"
+              href="http://mail.tadikapertiwi.com" target="_blank">http://mail.tadikapertiwi.com</a>.
+            Untuk metoda akses email lainnya (POP, IMAP, dsb), silakan
+            login ke control panel untuk informasi lebih lanjut.</p>
+          <p><strong>Informasi Lebih Lanjut</strong></p>
+          <p>Untuk Informasi lebih lanjut, anda dapat melihat panduan
+            penggunaan kami di <a moz-do-not-send="true"
+              href="http://docs.indoglobal.com" target="_blank">http://docs.indoglobal.com</a>.</p>
+          <p>Terima kasih untuk mempercayakan situs web anda kepada
+            kami.</p>
+          <div
+style="float:left;background-color:rgb(239,239,239);padding:0.5em;margin-bottom:2em">Ikuti
+            kami melalui media sosial untuk mendapatkan
+            informasi-informasi terbaru:<br>
+            <a moz-do-not-send="true" href="http://fb.com/indoglobalcom"
+              style="text-decoration:none" target="_blank"><img
+                moz-do-not-send="true" title="Facebook:" alt="Facebook:"
+                style="vertical-align: middle; padding-right: 2px;">fb.com/indoglobalcom</a>
+            <a moz-do-not-send="true"
+              href="http://twitter.com/indoglobalcom"
+              style="text-decoration:none" target="_blank"><img
+                moz-do-not-send="true" title="Twitter:" alt="Twitter:"
+                style="vertical-align: middle; padding-right: 2px;
+                margin-left: 1.5em;">@indoglobalcom</a> <a
+              moz-do-not-send="true" href="http://gplus.indoglobal.com"
+              style="text-decoration:none" target="_blank"><img
+                moz-do-not-send="true" title="Google+:" alt="Google+:"
+                style="vertical-align: middle; padding-right: 2px;
+                margin-left: 1.5em;">gplus.indoglobal.com</a><br>
+            <br>
+            PT Indoglobal Jejaring Solusi - <a moz-do-not-send="true"
+              href="http://indoglobal.com" target="_blank">http://indoglobal.com</a>
+            - <a moz-do-not-send="true"
+              href="mailto:info@indoglobal.com" target="_blank">info@indoglobal.com</a><br>
+            Phone: <a moz-do-not-send="true" href="tel:+62-21-77216633"
+              target="_blank">+62-21-77216633</a> <a
+              moz-do-not-send="true" href="tel:+62-21-77216644"
+              target="_blank">+62-21-77216644</a>. Fax: <a
+              moz-do-not-send="true">+62-21-77216655</a></div>
+          <br>
+          <p> </p>
+          <p>----------</p>
+          <p>Dear customer,</p>
+          <p align="center"><strong>PLEASE READ THIS EMAIL IN FULL AND
+              PRINT IT FOR YOUR RECORDS</strong></p>
+          <p>Thank you for your order from us! Your hosting account has
+            now been setup and this email contains all the information
+            you will need in order to begin using your account.</p>
+          <p><strong>New Account Information</strong></p>
+          <p>Hosting Package: Hosting-C<br>
+            Domain: <a moz-do-not-send="true"
+              href="http://tadikapertiwi.com" target="_blank">tadikapertiwi.com</a><br>
+            First Payment Amount: Rp 282,049<br>
+            Recurring Amount: Rp 552,000<br>
+            Billing Cycle: setiap tahun<br>
+            Next Due Date: 2016-04-15</p>
+          <p><strong>Login Details</strong></p>
+          <p>Username: u10321rqs<br>
+            Password: wx6X1bp7Q6<br>
+            Control Panel URL: <a moz-do-not-send="true" title=""
+              href="https://control.castor.idgx.net/" target="_blank">https://control.castor.idgx.net/</a></p>
+          <p><strong>DNS Information</strong></p>
+          <p>If you are using an existing domain with your new hosting
+            account, you will need to update the nameservers to point to
+            the nameservers listed below.</p>
+          <p>Nameserver 1: <a moz-do-not-send="true"
+              href="http://dns1.castor.idgx.net" target="_blank">dns1.castor.idgx.net</a>
+            (23.250.125.106)<br>
+            Nameserver 2: <a moz-do-not-send="true"
+              href="http://dns2.castor.idgx.net" target="_blank">dns2.castor.idgx.net</a>
+            (23.250.125.110)</p>
+          <p>If your domain name is not yet working, you may access your
+            web site by appending '<a moz-do-not-send="true"
+              href="http://alias.castor.idgx.net" target="_blank">alias.castor.idgx.net</a>'
+            to any domain and subdomain under your account. For example,
+            to access '<a moz-do-not-send="true"
+              href="http://tadikapertiwi.com" target="_blank">tadikapertiwi.com</a>'
+            you may use the name '<a moz-do-not-send="true"
+              href="http://tadikapertiwi.com.alias.castor.idgx.net"
+              target="_blank">tadikapertiwi.com.alias.castor.idgx.net</a>'.</p>
+          <p><strong>Uploading Your Website</strong></p>
+          <p>Please login to control panel for more information on
+            uploading your web site.</p>
+          <p><strong>Accessing Your Email</strong></p>
+          <p>Please login to control panel to create an email account.
+            You will be able to access your emails using web based mail
+            from <a moz-do-not-send="true"
+              href="http://mail.tadikapertiwi.com" target="_blank">http://mail.tadikapertiwi.com</a>.
+            For other methods of accessing your emails (POP, IMAP, etc),
+            please login to control panel for more information.</p>
+          <p><strong>More Information</strong></p>
+          <p>For further information about managing your account, you
+            can refer to our online documentation at <a
+              moz-do-not-send="true" href="http://docs.indoglobal.com"
+              target="_blank">http://docs.indoglobal.com</a>.</p>
+          <p>Thank you for choosing us.</p>
+          <p> </p>
+          <div
+style="float:left;background-color:rgb(239,239,239);padding:0.5em;margin-bottom:2em">Ikuti
+            kami melalui media sosial untuk mendapatkan
+            informasi-informasi terbaru:<br>
+            <a moz-do-not-send="true" href="http://fb.com/indoglobalcom"
+              style="text-decoration:none" target="_blank"><img
+                moz-do-not-send="true" title="Facebook:" alt="Facebook:"
+                style="vertical-align: middle; padding-right: 2px;">fb.com/indoglobalcom</a>
+            <a moz-do-not-send="true"
+              href="http://twitter.com/indoglobalcom"
+              style="text-decoration:none" target="_blank"><img
+                moz-do-not-send="true" title="Twitter:" alt="Twitter:"
+                style="vertical-align: middle; padding-right: 2px;
+                margin-left: 1.5em;">@indoglobalcom</a> <a
+              moz-do-not-send="true" href="http://gplus.indoglobal.com"
+              style="text-decoration:none" target="_blank"><img
+                moz-do-not-send="true" title="Google+:" alt="Google+:"
+                style="vertical-align: middle; padding-right: 2px;
+                margin-left: 1.5em;">gplus.indoglobal.com</a><br>
+            <br>
+            PT Indoglobal Jejaring Solusi - <a moz-do-not-send="true"
+              href="http://indoglobal.com" target="_blank">http://indoglobal.com</a>
+            - <a moz-do-not-send="true"
+              href="mailto:info@indoglobal.com" target="_blank">info@indoglobal.com</a><br>
+            Phone: <a moz-do-not-send="true" href="tel:+62-21-77216633"
+              target="_blank">+62-21-77216633</a> <a
+              moz-do-not-send="true" href="tel:+62-21-77216644"
+              target="_blank">+62-21-77216644</a>. Fax: <a
+              moz-do-not-send="true">+62-21-77216655</a></div>
+        </div>
+      </div>
+      <br>
+    </div>
+    <br>
+  </body>
+</html>
+
+--------------040402060906030603040801--
+
